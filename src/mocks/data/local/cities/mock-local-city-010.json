@@ -1,0 +1,9 @@
+{
+  "model": "api.city",
+  "pk": 10,
+  "fields": {
+    "cityId": 10,
+    "name": "Santiago",
+    "country": "Chile"
+  }
+}

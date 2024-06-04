@@ -1,0 +1,22 @@
+{
+  "model": "api.flight",
+  "pk": 20,
+  "fields": {
+    "flightId": 20,
+    "date": "2021-11-02",
+    "departure": "21:00:00",
+    "arrival": "22:00:00",
+    "duration": "01:00:00",
+    "price": 400.0,
+    "flight_from": {
+      "cityId": 2,
+      "name": "Monterrey",
+      "country": "México"
+    },
+    "flight_to": {
+      "cityId": 11,
+      "name": "Tokio",
+      "country": "Japan"
+    }
+  }
+}

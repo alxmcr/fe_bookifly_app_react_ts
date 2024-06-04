@@ -1,0 +1,9 @@
+{
+  "model": "api.city",
+  "pk": 12,
+  "fields": {
+    "cityId": 12,
+    "name": "Washington, D.C.",
+    "country": "United States"
+  }
+}

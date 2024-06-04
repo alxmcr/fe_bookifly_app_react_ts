@@ -1,0 +1,22 @@
+{
+  "model": "api.flight",
+  "pk": 17,
+  "fields": {
+    "flightId": 17,
+    "date": "2021-11-02",
+    "departure": "11:00:00",
+    "arrival": "13:00:00",
+    "duration": "02:00:00",
+    "price": 250.0,
+    "flight_from": {
+      "cityId": 2,
+      "name": "Monterrey",
+      "country": "México"
+    },
+    "flight_to": {
+      "cityId": 8,
+      "name": "Rio de Janeiro",
+      "country": "Brazil"
+    }
+  }
+}

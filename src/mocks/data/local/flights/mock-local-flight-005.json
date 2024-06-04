@@ -1,0 +1,22 @@
+{
+  "model": "api.flight",
+  "pk": 5,
+  "fields": {
+    "flightId": 5,
+    "date": "2021-11-01",
+    "departure": "22:00:00",
+    "arrival": "23:00:00",
+    "duration": "01:00:00",
+    "price": 300.0,
+    "flight_from": {
+      "cityId": 1,
+      "name": "Ciudad de México",
+      "country": "México"
+    },
+    "flight_to": {
+      "cityId": 6,
+      "name": "Paris",
+      "country": "France"
+    }
+  }
+}

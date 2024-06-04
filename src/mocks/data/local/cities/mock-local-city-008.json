@@ -1,0 +1,9 @@
+{
+  "model": "api.city",
+  "pk": 8,
+  "fields": {
+    "cityId": 8,
+    "name": "Rio de Janeiro",
+    "country": "Brazil"
+  }
+}
