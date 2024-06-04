@@ -1,0 +1,22 @@
+{
+  "model": "api.flight",
+  "pk": 6,
+  "fields": {
+    "flightId": 6,
+    "date": "2021-11-01",
+    "departure": "10:00:00",
+    "arrival": "12:00:00",
+    "duration": "02:00:00",
+    "price": 300.0,
+    "flight_from": {
+      "cityId": 1,
+      "name": "Ciudad de México",
+      "country": "México"
+    },
+    "flight_to": {
+      "cityId": 7,
+      "name": "Buenos Aires",
+      "country": "Argentina"
+    }
+  }
+}

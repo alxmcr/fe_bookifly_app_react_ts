@@ -1,0 +1,9 @@
+{
+  "model": "api.city",
+  "pk": 13,
+  "fields": {
+    "cityId": 13,
+    "name": "London",
+    "country": "United Kingdom"
+  }
+}

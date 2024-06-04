@@ -1,0 +1,9 @@
+{
+  "model": "api.city",
+  "pk": 11,
+  "fields": {
+    "cityId": 11,
+    "name": "Tokio",
+    "country": "Japan"
+  }
+}

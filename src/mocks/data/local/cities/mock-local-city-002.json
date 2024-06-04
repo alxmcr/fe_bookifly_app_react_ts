@@ -1,0 +1,9 @@
+{
+  "model": "api.city",
+  "pk": 2,
+  "fields": {
+    "cityId": 2,
+    "name": "Monterrey",
+    "country": "México"
+  }
+}

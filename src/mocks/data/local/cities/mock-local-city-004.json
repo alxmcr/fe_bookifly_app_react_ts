@@ -1,0 +1,9 @@
+{
+  "model": "api.city",
+  "pk": 4,
+  "fields": {
+    "cityId": 4,
+    "name": "Veracruz",
+    "country": "México"
+  }
+}

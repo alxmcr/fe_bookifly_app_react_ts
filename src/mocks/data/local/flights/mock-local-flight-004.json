@@ -1,0 +1,22 @@
+{
+  "model": "api.flight",
+  "pk": 4,
+  "fields": {
+    "flightId": 4,
+    "date": "2021-11-01",
+    "departure": "21:00:00",
+    "arrival": "22:00:00",
+    "duration": "01:00:00",
+    "price": 400.0,
+    "flight_from": {
+      "cityId": 1,
+      "name": "Ciudad de México",
+      "country": "México"
+    },
+    "flight_to": {
+      "cityId": 5,
+      "name": "Madrid",
+      "country": "España"
+    }
+  }
+}
