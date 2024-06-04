@@ -1,6 +1,6 @@
 import {
-    mapperLocalListModelCityToListCityData,
-    mapperLocalModelCityToCityData,
+  mapperLocalListModelCityToListCityData,
+  mapperLocalModelCityToCityData,
 } from '../../../@mappers/mapperLocalCity';
 import { LocalModelCityData } from '../../../@types/service/modelTypes';
 import { LocalCityData } from '../../../@types/service/serviceTypes';
