@@ -18,7 +18,9 @@ export default function HomePage() {
       </div>
       <h1>Home Page</h1>
       <div>
-        <button onClick={handleGoToFlightsPage}>Go to flights</button>
+        <button className="h-[60px] rounded-md bg-indigo-600 p-8 font-inter" onClick={handleGoToFlightsPage}>
+          Go to flights
+        </button>
       </div>
     </main>
   );
