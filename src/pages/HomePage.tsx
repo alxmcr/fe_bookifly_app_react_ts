@@ -1,6 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function HomePage() {
+  const navigate = useNavigate();
+
+  const handleGoToFlightsPage = () => {
+    navigate("/flights");
+  };
+
   return (
     <main>
       <div>
@@ -11,6 +17,9 @@ export default function HomePage() {
         <NavLink to="/booking-confirmation">Booking confirmation page</NavLink>
       </div>
       <h1>Home Page</h1>
+      <div>
+        <button onClick={handleGoToFlightsPage}>Go to flights</button>
+      </div>
     </main>
   );
 }
