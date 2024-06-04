@@ -1,10 +1,10 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export default function HomePage() {
   const navigate = useNavigate();
 
   const handleGoToFlightsPage = () => {
-    navigate("/flights");
+    navigate('/flights');
   };
 
   return (
