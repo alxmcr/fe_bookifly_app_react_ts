@@ -1,16 +1,10 @@
-import React from 'react';
-import {
-  FlightCityFromSearchContext,
-  FlightCityToSearchContext,
-  FlightDepartureDateContext,
-} from '../@providers/search/SearchFlightContext';
 import MainContentResultsFlightsPage from '../components/page-results-flights/MainContentResultsFlightsPage';
 import FlightsSection from '../components/page-results-flights/sections/FlightsSection';
 
 export default function ResultsFlightsPage() {
-  const fromId = React.useContext(FlightCityFromSearchContext);
-  const toId = React.useContext(FlightCityToSearchContext);
-  const departDate = React.useContext(FlightDepartureDateContext);
+  const fromId = 3;
+  const toId = 2;
+  const departDate = '2023-08-09';
 
   return (
     <div>
