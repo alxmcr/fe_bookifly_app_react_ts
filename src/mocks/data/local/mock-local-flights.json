@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "flightId": 1,
-      "date": "2024-11-01",
+      "date": "2024-08-01",
       "departure": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
@@ -444,7 +444,7 @@
     "pk": 21,
     "fields": {
       "flightId": 21,
-      "date": "2024-11-03",
+      "date": "2024-08-03",
       "departure": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
