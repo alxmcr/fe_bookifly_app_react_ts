@@ -13,13 +13,10 @@ export default function CardFlight({ flight }: Props) {
   const [passengers, setPassengers] = React.useState(0);
 
   const handleAddPassengers = () => {
-    console.log('handleAddPassengers');
     setPassengers((prePass) => prePass + 1);
   };
 
   const handleMinusPassengers = () => {
-    console.log('handleMinusPassengers');
-
     if (passengers - 1 > 0) {
       setPassengers((prePass) => prePass - 1);
     }
