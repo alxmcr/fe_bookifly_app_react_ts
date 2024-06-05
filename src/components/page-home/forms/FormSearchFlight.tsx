@@ -28,11 +28,11 @@ export default function FormSearchFlight() {
   const setPassengers = React.useContext(SetFlightPassengersContext);
 
   const handleFromId = (ev: React.ChangeEvent<HTMLSelectElement>) => {
-    setFromId(ev.target.value);
+    setFromId(Number(ev.target.value));
   };
 
   const handleToId = (ev: React.ChangeEvent<HTMLSelectElement>) => {
-    setToId(ev.target.value);
+    setToId(Number(ev.target.value));
   };
 
   const handleDepartureDate = (ev: React.ChangeEvent<HTMLInputElement>) => {
@@ -68,7 +68,7 @@ export default function FormSearchFlight() {
           nameSelectElement="city-from"
           htmlFor="flight-from"
           onChange={handleFromId}
-          citySelectedId={fromId}
+          citySelectedId={String(fromId)}
         />
       </div>
       <div className="flex flex-col gap-2">
@@ -80,7 +80,7 @@ export default function FormSearchFlight() {
           nameSelectElement="city-to"
           htmlFor="flight-to"
           onChange={handleToId}
-          citySelectedId={toId}
+          citySelectedId={String(toId)}
         />
       </div>
       <div className="flex flex-col gap-2">

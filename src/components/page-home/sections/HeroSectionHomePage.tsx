@@ -1,6 +1,6 @@
 import BoxFormSearchFlight from '../boxes/BoxFormSearchFlight';
 
-export default function HeroSection() {
+export default function HeroSectionHomePage() {
   return (
     <section className="w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-no-repeat py-10">
       <div className="mx-auto h-screen lg:w-[1028px]">

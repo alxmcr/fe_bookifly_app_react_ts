@@ -4,6 +4,8 @@
   "fields": {
     "cityId": 11,
     "name": "Tokio",
-    "country": "Japan"
+    "country": "Japan",
+    "abbrev": "TOK",
+    "abbrevCountry": "JAP"
   }
 }

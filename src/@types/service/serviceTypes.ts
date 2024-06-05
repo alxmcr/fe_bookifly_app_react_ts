@@ -2,6 +2,8 @@ export interface LocalCityData {
   cityId: number;
   name: string;
   country: string;
+  abbrev: string;
+  abbrevCountry: string;
 }
 
 export interface LocalFlightData {

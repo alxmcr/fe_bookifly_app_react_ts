@@ -4,6 +4,8 @@
   "fields": {
     "cityId": 1,
     "name": "Ciudad de México",
-    "country": "México"
+    "country": "México",
+    "abbrev": "CDMX",
+    "abbrevCountry": "MX"
   }
 }

@@ -4,6 +4,8 @@
   "fields": {
     "cityId": 8,
     "name": "Rio de Janeiro",
-    "country": "Brazil"
+    "country": "Brazil",
+    "abbrev": "RIO",
+    "abbrevCountry": "BRA"
   }
 }

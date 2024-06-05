@@ -4,6 +4,8 @@
   "fields": {
     "cityId": 13,
     "name": "London",
-    "country": "United Kingdom"
+    "country": "United Kingdom",
+    "abbrev": "LON",
+    "abbrevCountry": "UK"
   }
 }
