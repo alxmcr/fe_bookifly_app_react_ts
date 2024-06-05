@@ -1,11 +1,11 @@
 import AppHeader from '../navigation/AppHeader';
-import HeroSection from './sections/HeroSection';
+import HeroSectionHomePage from './sections/HeroSectionHomePage';
 
 export default function MainContentHomePage() {
   return (
     <main>
       <AppHeader />
-      <HeroSection />
+      <HeroSectionHomePage />
     </main>
   );
 }

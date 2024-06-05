@@ -3,7 +3,7 @@ import {
   mapperLocalModelFlightToFlightData,
 } from '../../../@mappers/mapperLocalFlight';
 import { LocalModelFlightData } from '../../../@types/service/modelTypes';
-import { LocalCityData, LocalFlightData } from '../../../@types/service/serviceTypes';
+import { LocalFlightData } from '../../../@types/service/serviceTypes';
 import mockLocalFlight001 from '../../../mocks/data/local/flights/mock-local-flight-001.json';
 import mockLocalFlight002 from '../../../mocks/data/local/flights/mock-local-flight-002.json';
 import mockLocalFlight003 from '../../../mocks/data/local/flights/mock-local-flight-003.json';
@@ -18,12 +18,12 @@ import mockLocalModalListFlights from '../../../mocks/data/local/mock-local-flig
 import { ILocalFlightService } from './ILocalFlightService';
 
 export class LocalFlightServiceImpl implements ILocalFlightService {
-  findByRoute(from: LocalCityData, to: LocalCityData, departDate: Date): Promise<LocalFlightData[]> {
-    if (from === null || from === undefined) {
+  findByRoute(fromId = 0, toId = 0, departDate = ''): Promise<LocalFlightData[]> {
+    if (fromId === null || fromId === undefined) {
       throw new Error('From is invalid');
     }
 
-    if (to === null || to === undefined) {
+    if (toId === null || toId === undefined) {
       throw new Error('To is invalid');
     }
 
@@ -40,9 +40,9 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
 
           const filter = flights.filter((flight) => {
             return (
-              flight.flight_from.cityId === from.cityId &&
-              flight.flight_to.cityId === to.cityId &&
-              new Date(flight.date).getTime() === departDate.getTime()
+              flight.flight_from.cityId === fromId &&
+              flight.flight_to.cityId === toId &&
+              new Date(flight.date).getTime() === new Date(departDate).getTime()
             );
           });
 
