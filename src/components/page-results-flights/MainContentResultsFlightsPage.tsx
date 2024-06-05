@@ -1,21 +1,16 @@
-import React from 'react';
-import {
-  FlightCityFromSearchContext,
-  FlightCityToSearchContext,
-} from '../../@providers/search/SearchFlightContext';
 import AppHeader from '../navigation/AppHeader';
-import FlightsSection from './sections/FlightsSection';
 import HeroSectionResultsFlightsPage from './sections/HeroSectionResultsFlightsPage';
 
-export default function MainContentResultsFlightsPage() {
-  const fromId = React.useContext(FlightCityFromSearchContext);
-  const toId = React.useContext(FlightCityToSearchContext);
+type Props = {
+  fromId: number;
+  toId: number;
+};
 
+export default function MainContentResultsFlightsPage({ fromId = 0, toId = 0 }: Props) {
   return (
     <main>
       <AppHeader />
-      <HeroSectionResultsFlightsPage fromId={3} toId={2} />
-      <FlightsSection />
+      <HeroSectionResultsFlightsPage fromId={fromId} toId={toId} />
     </main>
   );
 }

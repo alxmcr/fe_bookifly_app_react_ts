@@ -1,15 +1,17 @@
+import React from 'react';
 import { LocalFlightData } from '../../@types/service/serviceTypes';
 import Icon24x24CircleMinus from '../@icons/24x24/Icon24x24CircleMinus';
 import Icon24x24CirclePlus from '../@icons/24x24/Icon24x24CirclePlus';
 import Icon24x24MultiSelectFill from '../@icons/24x24/Icon24x24MultiSelectFill';
+import RouteIllustrationMobile from '../@illustrations/RouteIllustrationMobile';
 
 type Props = {
   flight: LocalFlightData;
-  passengers: number;
-  setPassengers: React.Dispatch<React.SetStateAction<number>>;
 };
 
-export default function CardFlight({ flight, passengers = 0, setPassengers }: Props) {
+export default function CardFlight({ flight }: Props) {
+  const [passengers, setPassengers] = React.useState(0);
+
   const handleAddPassengers = () => {
     console.log('handleAddPassengers');
     setPassengers((prePass) => prePass + 1);
@@ -23,10 +25,26 @@ export default function CardFlight({ flight, passengers = 0, setPassengers }: Pr
     }
   };
 
+  const handleSelectFlight = () => {
+    console.log('selected', { flight, passengers });
+  };
+
   return (
     <article>
-      <header></header>
-      <div>
+      <header className="flex items-center justify-between">
+        <div>
+          <span>{flight.flight_from.abbrev}</span>
+          <span>{flight.departure}</span>
+        </div>
+        <div>
+          <RouteIllustrationMobile />
+        </div>
+        <div>
+          <span>{flight.flight_to.abbrev}</span>
+          <span>{flight.arrival}</span>
+        </div>
+      </header>
+      <div className="flex items-center justify-between">
         <div className="flex flex-col gap-2">
           <span className="text-riptide-200">Price by passenger</span>
           <span>${flight.price}</span>
@@ -61,13 +79,13 @@ export default function CardFlight({ flight, passengers = 0, setPassengers }: Pr
           </div>
         </div>
       </div>
-      <footer>
+      <footer className="flex items-center justify-between">
         <div className="flex flex-col gap-2">
           <span className="text-riptide-200">Total all passengers</span>
           <div className="bg-light-50 text-light-950">${flight.price * passengers}</div>
         </div>
         <div className="flex flex-col gap-2">
-          <button className="bg-riptide-200 text-light-950">
+          <button className="bg-riptide-200 text-light-950" onClick={handleSelectFlight}>
             <span>Select</span>
             <Icon24x24MultiSelectFill />
           </button>
