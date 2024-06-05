@@ -1,16 +1,12 @@
-import React from 'react';
-import {
-  FlightCityFromSearchContext,
-  FlightCityToSearchContext,
-  FlightDepartureDateContext,
-} from '../../../@providers/search/SearchFlightContext';
 import BoxGroupCardFlights from '../../flights/BoxGroupCardFlights';
 
-export default function FlightsSection() {
-  const fromId = React.useContext(FlightCityFromSearchContext);
-  const toId = React.useContext(FlightCityToSearchContext);
-  const departDate = React.useContext(FlightDepartureDateContext);
+type Props = {
+  fromId: number;
+  toId: number;
+  departDate: string;
+};
 
+export default function FlightsSection({ fromId = 0, toId = 0, departDate = '' }: Props) {
   return (
     <section className="w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-no-repeat py-10">
       <div className="mx-auto h-screen lg:w-[1028px]">
