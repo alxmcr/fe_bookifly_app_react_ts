@@ -18,8 +18,8 @@ export default function BoxCityHeader({ cityId = 0 }: Props) {
 
   if (LoadingStates.SUCCESS === statusCity && city) {
     return (
-      <div>
-        <span className="text-light-50">{city.name}</span>
+      <div className="flex flex-col items-center justify-center">
+        <span className="font-nunito text-[30px] font-extrabold text-light-50">{city.name}</span>
         <span className="text-riptide-200">{city.country}</span>
       </div>
     );
