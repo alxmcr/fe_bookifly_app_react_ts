@@ -13,7 +13,7 @@ export default function SelectCities({
   defaultOptionLabel = '',
   nameSelectElement = '',
   htmlFor = '',
-  citySelectedId,
+  citySelectedId = '',
   onChange,
 }: Props) {
   const { cities, statusCities, errorCities } = useLocalCities();
@@ -35,7 +35,7 @@ export default function SelectCities({
       onChange={onChange}
       required
     >
-      <option disabled value="">
+      <option value="">
         {defaultOptionLabel}
       </option>
       {cities.map((city) => (
