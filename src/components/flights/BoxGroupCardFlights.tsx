@@ -12,11 +12,11 @@ export default function BoxGroupCardFlights({ fromId = 0, toId = 0, departDate =
   const { flights, statusFlights, errorFlights } = useLocalSearchFlights(fromId, toId, departDate);
 
   if (LoadingStates.PENDING === statusFlights) {
-    return <p>Loading...</p>;
+    return <p>Loading flights...</p>;
   }
 
   if (LoadingStates.ERROR === statusFlights && errorFlights) {
-    return <p>Loading...</p>;
+    return <p>{errorFlights.message}</p>;
   }
 
   if (LoadingStates.SUCCESS === statusFlights && flights) {
