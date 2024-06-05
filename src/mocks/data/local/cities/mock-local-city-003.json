@@ -4,6 +4,8 @@
   "fields": {
     "cityId": 3,
     "name": "Guadalajara",
-    "country": "México"
+    "country": "México",
+    "abbrev": "GDL",
+    "abbrevCountry": "MX"
   }
 }

@@ -4,6 +4,8 @@
   "fields": {
     "cityId": 10,
     "name": "Santiago",
-    "country": "Chile"
+    "country": "Chile",
+    "abbrev": "SAN",
+    "abbrevCountry": "CHI"
   }
 }

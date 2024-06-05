@@ -4,6 +4,8 @@
   "fields": {
     "cityId": 5,
     "name": "Madrid",
-    "country": "España"
+    "country": "Spain",
+    "abbrev": "MAD",
+    "abbrevCountry": "SPA"
   }
 }

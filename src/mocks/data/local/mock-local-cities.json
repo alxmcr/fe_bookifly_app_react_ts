@@ -5,7 +5,9 @@
     "fields": {
       "cityId": 1,
       "name": "Ciudad de México",
-      "country": "México"
+      "country": "México",
+      "abbrev": "CDMX",
+      "abbrevCountry": "MX"
     }
   },
   {
@@ -14,7 +16,9 @@
     "fields": {
       "cityId": 2,
       "name": "Monterrey",
-      "country": "México"
+      "country": "México",
+      "abbrev": "MTY",
+      "abbrevCountry": "MX"
     }
   },
   {
@@ -23,7 +27,9 @@
     "fields": {
       "cityId": 3,
       "name": "Guadalajara",
-      "country": "México"
+      "country": "México",
+      "abbrev": "GDL",
+      "abbrevCountry": "MX"
     }
   },
   {
@@ -32,7 +38,9 @@
     "fields": {
       "cityId": 4,
       "name": "Veracruz",
-      "country": "México"
+      "country": "México",
+      "abbrev": "VER",
+      "abbrevCountry": "MX"
     }
   },
   {
@@ -41,7 +49,9 @@
     "fields": {
       "cityId": 5,
       "name": "Madrid",
-      "country": "España"
+      "country": "Spain",
+      "abbrev": "MAD",
+      "abbrevCountry": "SPA"
     }
   },
   {
@@ -50,7 +60,9 @@
     "fields": {
       "cityId": 6,
       "name": "Paris",
-      "country": "France"
+      "country": "France",
+      "abbrev": "PAR",
+      "abbrevCountry": "FRA"
     }
   },
   {
@@ -59,7 +71,9 @@
     "fields": {
       "cityId": 7,
       "name": "Buenos Aires",
-      "country": "Argentina"
+      "country": "Argentina",
+      "abbrev": "Bs.As",
+      "abbrevCountry": "ARG"
     }
   },
   {
@@ -68,7 +82,9 @@
     "fields": {
       "cityId": 8,
       "name": "Rio de Janeiro",
-      "country": "Brazil"
+      "country": "Brazil",
+      "abbrev": "RIO",
+      "abbrevCountry": "BRA"
     }
   },
   {
@@ -77,7 +93,9 @@
     "fields": {
       "cityId": 9,
       "name": "Brasilia",
-      "country": "Brazil"
+      "country": "Brazil",
+      "abbrev": "BRAZ",
+      "abbrevCountry": "BRA"
     }
   },
   {
@@ -86,7 +104,42 @@
     "fields": {
       "cityId": 10,
       "name": "Santiago",
-      "country": "Chile"
+      "country": "Chile",
+      "abbrev": "SAN",
+      "abbrevCountry": "CHI"
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 11,
+    "fields": {
+      "cityId": 11,
+      "name": "Tokio",
+      "country": "Japan",
+      "abbrev": "TOK",
+      "abbrevCountry": "JAP"
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 12,
+    "fields": {
+      "cityId": 12,
+      "name": "Washington, D.C.",
+      "country": "United States",
+      "abbrev": "WAS",
+      "abbrevCountry": "USA"
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 13,
+    "fields": {
+      "cityId": 13,
+      "name": "London",
+      "country": "United Kingdom",
+      "abbrev": "LON",
+      "abbrevCountry": "UK"
     }
   }
 ]

@@ -4,6 +4,8 @@
   "fields": {
     "cityId": 7,
     "name": "Buenos Aires",
-    "country": "Argentina"
+    "country": "Argentina",
+    "abbrev": "Bs.As",
+    "abbrevCountry": "ARG"
   }
 }

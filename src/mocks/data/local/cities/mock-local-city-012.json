@@ -4,6 +4,8 @@
   "fields": {
     "cityId": 12,
     "name": "Washington, D.C.",
-    "country": "United States"
+    "country": "United States",
+    "abbrev": "WAS",
+    "abbrevCountry": "USA"
   }
 }
