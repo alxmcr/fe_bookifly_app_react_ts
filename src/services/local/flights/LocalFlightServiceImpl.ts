@@ -19,6 +19,8 @@ import { ILocalFlightService } from './ILocalFlightService';
 
 export class LocalFlightServiceImpl implements ILocalFlightService {
   findByRoute(fromId = 0, toId = 0, departDate = ''): Promise<LocalFlightData[]> {
+    console.log({ fromId, toId, departDate });
+
     if (fromId === null || fromId === undefined) {
       throw new Error('From is invalid');
     }
@@ -42,8 +44,9 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
             const conditionByFrom = flight.flight_from.cityId === fromId;
             const conditionByTo = flight.flight_to.cityId === toId;
             const conditionByDate = new Date(flight.date).getTime() === new Date(departDate).getTime();
+            console.log({ id: flight.flightId, conditionByFrom, conditionByTo, conditionByDate });
 
-            const conditionFilter = conditionByFrom && conditionByTo && conditionByDate;
+            const conditionFilter = conditionByFrom && conditionByTo;
 
             return conditionFilter;
           });
