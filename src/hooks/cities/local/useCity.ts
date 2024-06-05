@@ -3,7 +3,7 @@ import { LoadingStates } from '../../../@types/service/enumsService';
 import { LocalCityData } from '../../../@types/service/serviceTypes';
 import { LocalCityServiceImpl } from '../../../services/local/cities/LocalCityServiceImpl';
 
-export const useLocalCity = (id = '0') => {
+export const useLocalCity = (id = 0) => {
   const [city, setCity] = React.useState<LocalCityData | null>(null);
   const [errorCity, setErrorCity] = React.useState<Error | null>(null);
   const [statusCity, setStatusCity] = React.useState(LoadingStates.IDLE);
@@ -14,7 +14,7 @@ export const useLocalCity = (id = '0') => {
         setStatusCity(LoadingStates.PENDING);
 
         const service = new LocalCityServiceImpl();
-        const result = await service.findById(id);
+        const result = await service.findById(String(id));
 
         setCity(result);
         setStatusCity(LoadingStates.SUCCESS);
