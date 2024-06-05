@@ -13,6 +13,9 @@ export default function MainContentResultsFlightsPage() {
   return (
     <main>
       <AppHeader />
+      <span className="text-light-950">{fromId}</span>
+      <br />
+      <span className="text-light-950">{toId}</span>
       <HeroSectionResultsFlightsPage fromId={fromId} toId={toId} />
     </main>
   );
