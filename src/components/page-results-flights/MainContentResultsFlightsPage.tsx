@@ -13,7 +13,7 @@ export default function MainContentResultsFlightsPage() {
   return (
     <main>
       <AppHeader />
-      <HeroSectionResultsFlightsPage fromId={3} toId={2} />
+      <HeroSectionResultsFlightsPage fromId={fromId} toId={toId} />
     </main>
   );
 }
