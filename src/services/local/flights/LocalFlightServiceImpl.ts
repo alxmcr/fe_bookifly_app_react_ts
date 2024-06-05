@@ -39,11 +39,11 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
           );
 
           const filter = flights.filter((flight) => {
-            return (
-              flight.flight_from.cityId === fromId &&
-              flight.flight_to.cityId === toId &&
-              new Date(flight.date).getTime() === new Date(departDate).getTime()
-            );
+            const conditionByFrom = flight.flight_from.cityId === fromId;
+            const conditionByTo = flight.flight_to.cityId === toId;
+            const conditionByDate = new Date(flight.date).getTime() === new Date(departDate).getTime();
+
+            return conditionByFrom && conditionByTo && conditionByDate;
           });
 
           resolve(filter);
