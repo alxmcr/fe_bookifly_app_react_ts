@@ -15,8 +15,8 @@ type Props = {
 };
 
 export default function SearchFlightProvider({ children }: Props) {
-  const [fromId, setFromId] = React.useState('');
-  const [toId, setToId] = React.useState('');
+  const [fromId, setFromId] = React.useState(0);
+  const [toId, setToId] = React.useState(0);
   const [departureDate, setDepartureDate] = React.useState('');
   const [passengers, setPassengers] = React.useState(1);
 
