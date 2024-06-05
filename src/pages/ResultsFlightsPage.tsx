@@ -3,7 +3,7 @@ import FlightsSection from '../components/page-results-flights/sections/FlightsS
 
 export default function ResultsFlightsPage() {
   const fromId = 3;
-  const toId = 2;
+  const toId = 1;
   const departDate = '2024-11-02';
 
   return (
