@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { SetFlightPassengersContext } from '../../@providers/search/SearchFlightContext';
 import { LocalFlightData } from '../../@types/service/serviceTypes';
 import Icon24x24CircleMinus from '../@icons/24x24/Icon24x24CircleMinus';
 import Icon24x24CirclePlus from '../@icons/24x24/Icon24x24CirclePlus';
@@ -10,20 +12,24 @@ type Props = {
 };
 
 export default function CardFlight({ flight }: Props) {
-  const [passengers, setPassengers] = React.useState(0);
+  const navigate = useNavigate();
+  const setPassengers = React.useContext(SetFlightPassengersContext);
+  const [totalPassengers, setTotalPassengers] = React.useState(0);
 
   const handleAddPassengers = () => {
-    setPassengers((prePass) => prePass + 1);
+    setTotalPassengers((prePass) => prePass + 1);
   };
 
   const handleMinusPassengers = () => {
-    if (passengers - 1 > 0) {
-      setPassengers((prePass) => prePass - 1);
+    if (totalPassengers - 1 > 0) {
+      setTotalPassengers((prePass) => prePass - 1);
     }
   };
 
   const handleSelectFlight = () => {
-    console.log('selected', { flight, passengers });
+    console.log('selected', { flight, passengers: totalPassengers });
+    setPassengers(totalPassengers);
+    navigate(`/flight/${flight.flightId}`);
   };
 
   return (
@@ -56,7 +62,7 @@ export default function CardFlight({ flight }: Props) {
             <button
               type="button"
               onClick={handleMinusPassengers}
-              disabled={passengers - 1 === 0}
+              disabled={totalPassengers - 1 === 0}
               className="text-riptide-200 disabled:text-riptide-800"
             >
               <Icon24x24CircleMinus />
@@ -66,7 +72,7 @@ export default function CardFlight({ flight }: Props) {
               name="passengers"
               id="passengers"
               className="h-[40px] max-w-[50px] grow rounded-lg p-2 text-center disabled:bg-light-400 lg:w-[106px]"
-              value={passengers}
+              value={totalPassengers}
               required
               disabled
             />
@@ -84,7 +90,7 @@ export default function CardFlight({ flight }: Props) {
         <div className="flex flex-col justify-center gap-2">
           <span className="text-riptide-200">Total all passengers</span>
           <div className="flex h-[40px] w-[154px] items-center justify-center rounded-lg bg-light-50">
-            <span className="font-nunito font-bold text-light-950">${flight.price * passengers}</span>
+            <span className="font-nunito font-bold text-light-950">${flight.price * totalPassengers}</span>
           </div>
         </div>
         <div className="flex flex-col gap-2">
