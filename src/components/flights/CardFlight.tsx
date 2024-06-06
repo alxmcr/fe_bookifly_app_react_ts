@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { SetFlightPassengersContext } from '../../@providers/search/SearchFlightContext';
+import { SetFlightPassengersContext } from '../../@providers/search-flight/SearchFlightContext';
 import { LocalFlightData } from '../../@types/service/serviceTypes';
 import Icon24x24CircleMinus from '../@icons/24x24/Icon24x24CircleMinus';
 import Icon24x24CirclePlus from '../@icons/24x24/Icon24x24CirclePlus';
