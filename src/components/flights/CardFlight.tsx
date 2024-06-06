@@ -27,24 +27,24 @@ export default function CardFlight({ flight }: Props) {
   };
 
   return (
-    <article>
+    <article className="rounded-lg border border-riptide-200 p-2">
       <header className="flex items-center justify-between">
         <div>
-          <span>{flight.flight_from.abbrev}</span>
-          <span>{flight.departure}</span>
+          <span className="font-bold text-riptide-200">{flight.flight_from.abbrev}</span>
+          <span className="text-light-50">{flight.departure}</span>
         </div>
         <div>
           <RouteIllustrationMobile />
         </div>
         <div>
-          <span>{flight.flight_to.abbrev}</span>
-          <span>{flight.arrival}</span>
+          <span className="font-bold text-riptide-200">{flight.flight_to.abbrev}</span>
+          <span className="text-light-50">{flight.arrival}</span>
         </div>
       </header>
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-2">
           <span className="text-riptide-200">Price by passenger</span>
-          <span>${flight.price}</span>
+          <span className="text-light-50">${flight.price}</span>
         </div>
         <div className="flex flex-col gap-2">
           <span className="text-riptide-200">Total of passengers</span>
@@ -76,13 +76,18 @@ export default function CardFlight({ flight }: Props) {
           </div>
         </div>
       </div>
-      <footer className="flex items-center justify-between">
+      <footer className="flex items-end justify-between">
         <div className="flex flex-col gap-2">
           <span className="text-riptide-200">Total all passengers</span>
-          <div className="bg-light-50 text-light-950">${flight.price * passengers}</div>
+          <div className="flex h-[40px] w-[154px] items-center justify-center rounded-lg bg-light-50">
+            <span className="text-light-950">${flight.price * passengers}</span>
+          </div>
         </div>
         <div className="flex flex-col gap-2">
-          <button className="bg-riptide-200 text-light-950" onClick={handleSelectFlight}>
+          <button
+            className="flex h-[40px] w-[154px] items-center justify-center gap-3 rounded-lg bg-riptide-200 text-light-950"
+            onClick={handleSelectFlight}
+          >
             <span>Select</span>
             <Icon24x24MultiSelectFill />
           </button>
