@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { SetFlightPassengersContext } from '../../@providers/search/SearchFlightContext';
 import { LocalFlightData } from '../../@types/service/serviceTypes';
 import Icon24x24CircleMinus from '../@icons/24x24/Icon24x24CircleMinus';
 import Icon24x24CirclePlus from '../@icons/24x24/Icon24x24CirclePlus';
@@ -13,7 +12,6 @@ type Props = {
 
 export default function CardFlight({ flight }: Props) {
   const navigate = useNavigate();
-  const setPassengers = React.useContext(SetFlightPassengersContext);
   const [totalPassengers, setTotalPassengers] = React.useState(0);
 
   const handleAddPassengers = () => {
@@ -28,7 +26,6 @@ export default function CardFlight({ flight }: Props) {
 
   const handleSelectFlight = () => {
     console.log('selected', { flight, passengers: totalPassengers });
-    setPassengers(totalPassengers);
     navigate(`/flight/${flight.flightId}`);
   };
 
