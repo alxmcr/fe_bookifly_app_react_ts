@@ -1,15 +1,12 @@
-import React from 'react';
 import AppHeader from '../navigation/AppHeader';
 import HeroSectionResultsFlightsPage from './sections/HeroSectionResultsFlightsPage';
-import {
-  FlightCityFromSearchContext,
-  FlightCityToSearchContext,
-} from '../../@providers/search/SearchFlightContext';
 
-export default function MainContentResultsFlightsPage() {
-  const fromId = React.useContext(FlightCityFromSearchContext);
-  const toId = React.useContext(FlightCityToSearchContext);
+type Props = {
+  fromId: number;
+  toId: number;
+};
 
+export default function MainContentResultsFlightsPage({ fromId = 0, toId = 0 }: Props) {
   return (
     <main>
       <AppHeader />

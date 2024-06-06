@@ -35,9 +35,7 @@ export default function SelectCities({
       onChange={onChange}
       required
     >
-      <option value="">
-        {defaultOptionLabel}
-      </option>
+      <option value="">{defaultOptionLabel}</option>
       {cities.map((city) => (
         <option key={city.cityId} className="p-2" value={city.cityId}>
           {city.name}, {city.country}
