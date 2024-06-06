@@ -1,4 +1,4 @@
-export type PassengerData = {
+export type PassengerDataProv = {
   id: number;
   code: string;
   name: string;
@@ -13,8 +13,8 @@ export type BookingData = {
   numberOfTickets: number;
   bookingStatus: 'Pending' | 'Confirmed' | 'Cancelled';
   bookingDate: string;
-  buyer: PassengerData;
-  passengers: PassengerData[];
+  buyer: PassengerDataProv;
+  passengers: PassengerDataProv[];
 };
 
 export type PaymentData = {
