@@ -9,7 +9,7 @@ export default function GroupCardFlights({ flights = [] }: Props) {
   return (
     <div>
       {flights.map((flight) => (
-        <CardFlight flight={flight} />
+        <CardFlight key={flight.flightId} flight={flight} />
       ))}
     </div>
   );
