@@ -12,7 +12,7 @@ import {
   SetFlightCityToSearchContext,
   SetFlightDepartureDateContext,
   SetFlightPassengersContext,
-} from '../../../@providers/search/SearchFlightContext';
+} from '../../../@providers/search-flight/SearchFlightContext';
 import { useNavigate } from 'react-router-dom';
 
 export default function FormSearchFlight() {
