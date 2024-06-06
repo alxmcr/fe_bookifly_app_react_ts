@@ -1,4 +1,5 @@
 import React from 'react';
+import FlightSelectedProvider from './flight-selected/FlightSelectedProvider';
 import SearchFlightProvider from './search-flight/SearchFlightProvider';
 
 type Props = {
@@ -6,5 +7,9 @@ type Props = {
 };
 
 export default function AppProviders({ children }: Props) {
-  return <SearchFlightProvider>{children}</SearchFlightProvider>;
+  return (
+    <SearchFlightProvider>
+      <FlightSelectedProvider>{children}</FlightSelectedProvider>
+    </SearchFlightProvider>
+  );
 }
