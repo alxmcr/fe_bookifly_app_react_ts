@@ -27,28 +27,32 @@ export default function CardFlight({ flight }: Props) {
   };
 
   return (
-    <article className="rounded-lg border border-riptide-200 p-2">
-      <header className="flex items-center justify-between">
-        <div>
-          <span className="font-bold text-riptide-200">{flight.flight_from.abbrev}</span>
-          <span className="text-light-50">{flight.departure}</span>
+    <article className="flex flex-col gap-2 rounded-lg border border-riptide-200 p-2 md:w-[288px]">
+      <header className="flex justify-center gap-5">
+        <div className="flex flex-col items-center justify-center gap-2">
+          <span className="font-nunito text-[18px] font-bold text-riptide-200">
+            {flight.flight_from.abbrev}
+          </span>
+          <span className="font-nunito text-[1rem] text-light-50">{flight.departure}</span>
         </div>
         <div>
           <RouteIllustrationMobile />
         </div>
-        <div>
-          <span className="font-bold text-riptide-200">{flight.flight_to.abbrev}</span>
-          <span className="text-light-50">{flight.arrival}</span>
+        <div className="flex flex-col items-center justify-center gap-2">
+          <span className="font-nunito text-[18px] font-bold text-riptide-200">
+            {flight.flight_to.abbrev}
+          </span>
+          <span className="font-nunito text-light-50">{flight.arrival}</span>
         </div>
       </header>
-      <div className="flex items-center justify-between">
-        <div className="flex flex-col gap-2">
-          <span className="text-riptide-200">Price by passenger</span>
-          <span className="text-light-50">${flight.price}</span>
+      <div className="flex justify-between border-t border-riptide-200 pt-4">
+        <div className="flex flex-col justify-center gap-2">
+          <span className="text-[14px] text-riptide-200">Price by passenger</span>
+          <span className="h-[40px] font-nunito text-[1rem] font-bold text-light-50">${flight.price}</span>
         </div>
-        <div className="flex flex-col gap-2">
-          <span className="text-riptide-200">Total of passengers</span>
-          <div className="flex items-center gap-[12px]">
+        <div className="flex flex-col justify-center gap-2">
+          <span className="text-[14px] text-riptide-200">Total of passengers</span>
+          <div className="flex gap-[12px]">
             <button
               type="button"
               onClick={handleMinusPassengers}
@@ -61,7 +65,7 @@ export default function CardFlight({ flight }: Props) {
               type="number"
               name="passengers"
               id="passengers"
-              className="h-[40px] w-[154px] grow rounded-lg p-2 text-center disabled:bg-light-400 lg:w-[106px]"
+              className="h-[40px] max-w-[50px] grow rounded-lg p-2 text-center disabled:bg-light-400 lg:w-[106px]"
               value={passengers}
               required
               disabled
@@ -77,18 +81,18 @@ export default function CardFlight({ flight }: Props) {
         </div>
       </div>
       <footer className="flex items-end justify-between">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col justify-center gap-2">
           <span className="text-riptide-200">Total all passengers</span>
           <div className="flex h-[40px] w-[154px] items-center justify-center rounded-lg bg-light-50">
-            <span className="text-light-950">${flight.price * passengers}</span>
+            <span className="font-nunito font-bold text-light-950">${flight.price * passengers}</span>
           </div>
         </div>
         <div className="flex flex-col gap-2">
           <button
-            className="flex h-[40px] w-[154px] items-center justify-center gap-3 rounded-lg bg-riptide-200 text-light-950"
+            className="flex h-[40px] w-[108px] items-center justify-center gap-3 rounded-lg bg-riptide-200 text-light-950"
             onClick={handleSelectFlight}
           >
-            <span>Select</span>
+            <span className="font-nunito font-bold">Select</span>
             <Icon24x24MultiSelectFill />
           </button>
         </div>
