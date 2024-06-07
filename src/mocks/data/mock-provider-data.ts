@@ -1,4 +1,12 @@
 import { BookingData, PassengerDataProv } from '../../@types/provider/providerTypes';
+import { SearchFlightState } from '../../@types/store/storeTypes';
+
+export const initialSearchFlight: SearchFlightState = {
+  fromId: 0,
+  toId: 0,
+  departureDate: '',
+  totalPassengersRequired: 0,
+};
 
 export const initialPassenger: PassengerDataProv = {
   id: 0,
