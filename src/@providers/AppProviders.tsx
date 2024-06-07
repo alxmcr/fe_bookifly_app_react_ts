@@ -1,6 +1,6 @@
 import React from 'react';
-import SearchFlightProvider from './search-flight/SearchFlightProvider';
-import BookingProvider from './booking/BookingProvider';
+import SearchFlightProvider from './search-flight-xxx/SearchFlightProvider';
+import BookingProvider from './booking-xxx/BookingProvider';
 
 type Props = {
   children: React.ReactNode;
