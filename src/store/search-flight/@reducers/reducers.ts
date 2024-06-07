@@ -1,9 +1,6 @@
 import { SearchFlightAction, SearchFlightState } from '../../../@types/store/storeTypes';
 
-export const searchFlightReducers = (
-  state: SearchFlightState,
-  action: SearchFlightAction,
-): SearchFlightState => {
+export default function searchFlightReducers(state: SearchFlightState, action: SearchFlightAction):SearchFlightState {
   switch (action.type) {
     case 'set_city_from': {
       return { ...state, fromId: action.payload.fromId };
@@ -25,4 +22,4 @@ export const searchFlightReducers = (
       throw Error(`Unknown action`);
     }
   }
-};
+}

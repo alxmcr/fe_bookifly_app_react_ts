@@ -72,7 +72,9 @@ type SetBookingDateAction = {
 
 type SetBuyerAction = {
   type: 'set_buyer';
-  payload: LocalTemporalPassengerData;
+  payload: {
+    buyer: LocalTemporalPassengerData;
+  };
 };
 
 type AddPassengerAction = {
