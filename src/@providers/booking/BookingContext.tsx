@@ -1,9 +1,6 @@
 import React from 'react';
-import { BookingData } from '../../@types/provider/providerTypes';
-import { initialBooking } from '../../mocks/data/mock-provider-data';
+import { BookingAction, BookingState } from '../../@types/store/storeTypes';
+import { initialBookingState } from '../../mocks/data/mock-provider-data';
 
-export const BookingContext = React.createContext<BookingData>(initialBooking);
-
-export const SetBookingContext = React.createContext<React.Dispatch<React.SetStateAction<BookingData>>>(
-  () => {},
-);
+export const BookingContext = React.createContext<BookingState>(initialBookingState);
+export const BookingDispatchContext = React.createContext<React.Dispatch<BookingAction>>(() => {});
