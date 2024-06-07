@@ -30,6 +30,7 @@ export default function FormSearchFlight() {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
+    console.log({ name, value });
     setFormData({ ...formData, [name]: value });
   };
 
@@ -46,7 +47,7 @@ export default function FormSearchFlight() {
         </label>
         <SelectCities
           defaultOptionLabel="Select a city from"
-          nameSelectElement="city-from"
+          nameSelectElement="fromId"
           htmlFor="flight-from"
           onChange={handleInputChange}
           citySelectedId={String(formData.fromId)}
@@ -58,7 +59,7 @@ export default function FormSearchFlight() {
         </label>
         <SelectCities
           defaultOptionLabel="Select a city to"
-          nameSelectElement="city-to"
+          nameSelectElement="toId"
           htmlFor="flight-to"
           onChange={handleInputChange}
           citySelectedId={String(formData.toId)}
@@ -71,7 +72,7 @@ export default function FormSearchFlight() {
         <div>
           <input
             type="date"
-            name="departure-date"
+            name="departureDate"
             id="departure-date"
             className="h-[40px] w-full rounded-lg p-2"
             value={formData.departureDate}
@@ -95,7 +96,7 @@ export default function FormSearchFlight() {
           </button>
           <input
             type="number"
-            name="passengers"
+            name="totalPassengersRequired"
             id="passengers"
             className="h-[40px] w-[154px] grow rounded-lg p-2 text-center disabled:bg-light-400 lg:w-[106px]"
             value={formData.totalPassengersRequired}
