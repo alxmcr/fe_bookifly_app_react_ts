@@ -1,6 +1,6 @@
-import { BookingData, PassengerData } from '../../@types/provider/providerTypes';
+import { BookingData, PassengerDataProv } from '../../@types/provider/providerTypes';
 
-export const initialPassenger: PassengerData = {
+export const initialPassenger: PassengerDataProv = {
   id: 0,
   code: '',
   name: '',
