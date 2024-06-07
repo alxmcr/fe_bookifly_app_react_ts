@@ -1,10 +1,20 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { BookingDispatchContext } from '../../@providers/booking/BookingContext';
 import { LocalFlightData } from '../../@types/service/serviceTypes';
 import Icon24x24CircleMinus from '../@icons/24x24/Icon24x24CircleMinus';
 import Icon24x24CirclePlus from '../@icons/24x24/Icon24x24CirclePlus';
 import Icon24x24MultiSelectFill from '../@icons/24x24/Icon24x24MultiSelectFill';
 import RouteIllustrationMobile from '../@illustrations/RouteIllustrationMobile';
+import {
+  setBookingDateAction,
+  setBookingStatusAction,
+  setBuyerAction,
+  setFlightSelectedAction,
+  setNumberOfTicketsAction,
+} from '../../store/booking/@actions/actions';
+import { format } from 'date-fns';
+import { initialTemporalPassenger } from '../../mocks/data/mock-provider-data';
 
 type Props = {
   flight: LocalFlightData;
@@ -12,6 +22,7 @@ type Props = {
 
 export default function CardFlight({ flight }: Props) {
   const navigate = useNavigate();
+  const dispatchBooking = React.useContext(BookingDispatchContext);
   const [totalPassengers, setTotalPassengers] = React.useState(0);
 
   const handleAddPassengers = () => {
@@ -26,6 +37,13 @@ export default function CardFlight({ flight }: Props) {
 
   const handleSelectFlight = () => {
     console.log('selected', { flight, passengers: totalPassengers });
+
+    setFlightSelectedAction(flight.flightId, dispatchBooking);
+    setNumberOfTicketsAction(totalPassengers, dispatchBooking);
+    setBookingStatusAction('Pending', dispatchBooking);
+    setBookingDateAction(format(Date.now(), 'yyyy-MM-dd'), dispatchBooking);
+    setBuyerAction(initialTemporalPassenger, dispatchBooking);
+
     navigate(`/flight/${flight.flightId}`);
   };
 

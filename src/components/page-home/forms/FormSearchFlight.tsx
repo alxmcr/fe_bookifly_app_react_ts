@@ -1,7 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { SearchFlightDispatchContext } from '../../../@providers/search-flight/SearchFlightContext';
 import { SearchFlightState } from '../../../@types/store/storeTypes';
 import { initialSearchFlightState } from '../../../mocks/data/mock-provider-data';
+import { setTotalPassengersRequiredAction } from '../../../store/search-flight/@actions/actions';
 import Icon24x24Search from '../../@icons/24x24/Icon24x24Search';
 import Icon40x40CircleMinus from '../../@icons/40x40/Icon40x40CircleMinus';
 import Icon40x40CirclePlus from '../../@icons/40x40/Icon40x40CirclePlus';
@@ -11,12 +13,14 @@ export default function FormSearchFlight() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = React.useState<SearchFlightState>(initialSearchFlightState);
+  const dispatchSearchFlight = React.useContext(SearchFlightDispatchContext);
 
   const handleAddPassengers = () => {
     setFormData((prevData) => ({
       ...prevData,
       totalPassengersRequired: prevData.totalPassengersRequired + 1,
     }));
+    setTotalPassengersRequiredAction(formData.totalPassengersRequired + 1, dispatchSearchFlight);
   };
 
   const handleMinusPassengers = () => {
@@ -25,6 +29,7 @@ export default function FormSearchFlight() {
         ...prevData,
         totalPassengersRequired: prevData.totalPassengersRequired - 1,
       }));
+      setTotalPassengersRequiredAction(formData.totalPassengersRequired - 1, dispatchSearchFlight);
     }
   };
 
@@ -36,6 +41,7 @@ export default function FormSearchFlight() {
 
   const onSubmit = (ev: React.FormEvent) => {
     ev.preventDefault();
+
     navigate('/flights');
   };
 
