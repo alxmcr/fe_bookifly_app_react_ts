@@ -4,10 +4,10 @@ import { BookingState, SearchFlightState } from '../../@types/store/storeTypes';
 
 export const initialTemporalPassenger: LocalTemporalPassengerData = {
   pa_temporal_id: 0,
-  pa_name: 'string',
-  pa_lastName: 'string',
-  pa_email: 'string',
-  pa_phoneNumber: 'string',
+  pa_name: '',
+  pa_lastName: '',
+  pa_email: '',
+  pa_phoneNumber: '',
 };
 
 export const initialSearchFlightState: SearchFlightState = {
