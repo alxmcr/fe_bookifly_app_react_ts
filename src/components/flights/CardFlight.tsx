@@ -5,7 +5,7 @@ import { LocalFlightData } from '../../@types/service/serviceTypes';
 import Icon24x24CircleMinus from '../@icons/24x24/Icon24x24CircleMinus';
 import Icon24x24CirclePlus from '../@icons/24x24/Icon24x24CirclePlus';
 import Icon24x24MultiSelectFill from '../@icons/24x24/Icon24x24MultiSelectFill';
-import RouteIllustrationMobile from '../@illustrations/RouteIllustrationMobile';
+import IllustrationRouteFillMobile from '../@illustrations/IllustrationRouteFillMobile';
 import {
   setBookingDateAction,
   setBookingStatusAction,
@@ -57,7 +57,7 @@ export default function CardFlight({ flight }: Props) {
           <span className="font-nunito text-[1rem] text-light-50">{flight.departure}</span>
         </div>
         <div>
-          <RouteIllustrationMobile />
+          <IllustrationRouteFillMobile />
         </div>
         <div className="flex flex-col items-center justify-center gap-2">
           <span className="font-nunito text-[18px] font-bold text-riptide-200">
