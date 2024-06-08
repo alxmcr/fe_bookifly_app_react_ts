@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 import BookingConfirmationPage from '../pages/BookingConfirmationPage';
-import FlightPage from '../pages/FlightPage';
+import BookingFlightPage from '../pages/BookingFlightPage';
 import HomePage from '../pages/HomePage';
 import ResultsFlightsPage from '../pages/ResultsFlightsPage';
 
@@ -16,9 +16,9 @@ export const routes: RouteObject[] = [
     element: <ResultsFlightsPage />,
   },
   {
-    id: 'flight-page',
-    path: '/flight/:id',
-    element: <FlightPage />,
+    id: 'booking-page',
+    path: '/booking',
+    element: <BookingFlightPage />,
   },
   {
     id: 'booking-confirmation-page',

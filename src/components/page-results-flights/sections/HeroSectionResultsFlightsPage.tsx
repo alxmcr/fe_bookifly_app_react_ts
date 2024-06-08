@@ -1,5 +1,5 @@
-import RouteIllustrationDesktop from '../../@illustrations/RouteIllustrationDesktop';
-import RouteIllustrationMobile from '../../@illustrations/RouteIllustrationMobile';
+import RouteIllustrationDesktop from '../../@illustrations/IllustrationRouteFillDesktop';
+import IllustrationRouteFillMobile from '../../@illustrations/IllustrationRouteFillMobile';
 import BoxCityHeader from '../../flights/BoxCityHeader';
 
 type Props = {
@@ -14,8 +14,8 @@ export default function HeroSectionResultsFlightsPage({ fromId = 0, toId = 0 }: 
         {fromId > 0 && toId > 0 ? (
           <div className="flex flex-wrap items-center justify-center gap-5 px-4 md:px-10">
             <BoxCityHeader cityId={fromId} />
-            <div className="lg:hidden">
-              <RouteIllustrationMobile />
+            <div className="md:hidden lg:hidden">
+              <IllustrationRouteFillMobile />
             </div>
             <div className="hidden md:flex">
               <RouteIllustrationDesktop />

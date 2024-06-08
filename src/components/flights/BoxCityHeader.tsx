@@ -18,7 +18,7 @@ export default function BoxCityHeader({ cityId = 0 }: Props) {
 
   if (LoadingStates.SUCCESS === statusCity && city) {
     return (
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex w-[100px] flex-col items-center justify-center">
         <span className="font-nunito text-[30px] font-extrabold text-light-50">{city.abbrev}</span>
         <span className="text-riptide-200">{city.country}</span>
       </div>
