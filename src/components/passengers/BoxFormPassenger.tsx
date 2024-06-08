@@ -1,7 +1,9 @@
-import FormPassenger from "./FormPassenger";
+import FormPassenger from './FormPassenger';
 
 export default function BoxFormPassenger() {
-  return <div>
-    <FormPassenger />
-  </div>;
+  return (
+    <div>
+      <FormPassenger />
+    </div>
+  );
 }
