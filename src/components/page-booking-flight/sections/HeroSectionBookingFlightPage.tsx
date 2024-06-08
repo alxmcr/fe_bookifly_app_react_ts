@@ -1,3 +1,5 @@
+import Icon36x36AlarmOutlineRounded from '../../@icons/36x36/Icon36x36AlarmOutlineRounded';
+import Icon36x36Calendar from '../../@icons/36x36/Icon36x36Calendar';
 import RouteIllustrationDesktop from '../../@illustrations/IllustrationRouteFillDesktop';
 import IllustrationRouteFillMobile from '../../@illustrations/IllustrationRouteFillMobile';
 import BoxCityHeader from '../../flights/BoxCityHeader';
@@ -8,24 +10,31 @@ export default function HeroSectionBookingFlightPage() {
 
   return (
     <section className="w-full bg-black py-[100px]">
-      <div className="flex justify-between">
-        <div>
-        </div>
-        <div></div>
-      </div>
       <div className="mx-auto h-[50px] lg:w-[1028px]">
-        {fromId > 0 && toId > 0 ? (
-          <div className="flex flex-wrap items-center justify-center gap-5 px-4 md:px-10">
-            <BoxCityHeader cityId={fromId} />
-            <div className="md:hidden lg:hidden">
-              <IllustrationRouteFillMobile />
+        <div className="flex flex-col gap-4 border border-riptide-200 p-4 md:w-[320px] md:px-10">
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-2 text-riptide-200">
+              <Icon36x36Calendar />
+              <span className="font-nunito">08/06/2024</span>
             </div>
-            <div className="hidden md:flex">
-              <RouteIllustrationDesktop />
+            <div className="flex items-center gap-2 text-riptide-200">
+              <Icon36x36AlarmOutlineRounded />
+              <span className="font-nunito">08/06/2024</span>
             </div>
-            <BoxCityHeader cityId={toId} />
           </div>
-        ) : null}
+          {fromId > 0 && toId > 0 ? (
+            <div className="flex items-center justify-between gap-4">
+              <BoxCityHeader cityId={fromId} />
+              <div className="md:hidden lg:hidden">
+                <IllustrationRouteFillMobile />
+              </div>
+              <div className="hidden md:flex">
+                <RouteIllustrationDesktop />
+              </div>
+              <BoxCityHeader cityId={toId} />
+            </div>
+          ) : null}
+        </div>
       </div>
     </section>
   );
