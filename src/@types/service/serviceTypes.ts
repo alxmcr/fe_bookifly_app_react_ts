@@ -19,7 +19,7 @@ export type LocalFlightData = {
 
 export type LocalTemporalPassengerData = {
   pa_temporal_id: number;
-  pa_name: string;
+  pa_firstName: string;
   pa_lastName: string;
   pa_email?: string;
   pa_phoneNumber?: string;
