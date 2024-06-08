@@ -9,7 +9,7 @@ export default function MainContentBookingFlightPage({ fromId = 0, toId = 0 }: P
   console.log({ fromId, toId });
 
   return (
-    <main>
+    <main className="h-[285px] w-full bg-black md:h-[336px] lg:h-[614px]">
       <AppHeader />
     </main>
   );
