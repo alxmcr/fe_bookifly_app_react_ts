@@ -44,7 +44,7 @@ export default function CardFlight({ flight }: Props) {
     setBookingDateAction(format(Date.now(), 'yyyy-MM-dd'), dispatchBooking);
     setBuyerAction(initialTemporalPassenger, dispatchBooking);
 
-    navigate(`/flight/${flight.flightId}`);
+    navigate(`/booking`);
   };
 
   return (
@@ -56,7 +56,7 @@ export default function CardFlight({ flight }: Props) {
           </span>
           <span className="font-nunito text-[1rem] text-light-50">{flight.departure}</span>
         </div>
-        <div>
+        <div className="flex items-center">
           <IllustrationRouteFillMobile />
         </div>
         <div className="flex flex-col items-center justify-center gap-2">
