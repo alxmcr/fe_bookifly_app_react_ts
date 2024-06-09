@@ -1,6 +1,7 @@
 .item-accordion-header {
   cursor: pointer;
   padding: 1rem;
+  color: theme('colors.riptide.200');
   border-bottom: 1px solid theme('colors.riptide.200');
 }
 
@@ -10,6 +11,7 @@
 
 .item-accordion-header::after {
   content: url('/assets/icons/24x24/icon-24x24-arrow-down.svg');
+  color: theme('colors.riptide.200');
   float: right;
   transition: transform 0.3s ease;
 }
@@ -25,6 +27,7 @@ details[open] .accordion-header {
 
 details[open] .item-accordion-header::after {
   content: url('/assets/icons/24x24/icon-24x24-arrow-up.svg');
+  color: theme('colors.riptide.200');
 }
 
 details[open] .item-accordion-content {
