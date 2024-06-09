@@ -43,8 +43,8 @@ export default function FormPayment() {
           onChange={handleInputChange}
         />
       </label>
-      <div className="flex items-center justify-between">
-        <label htmlFor="expiration-date" className="flex flex-col gap-2">
+      <div className="flex items-center justify-between gap-2">
+        <label htmlFor="expiration-date" className="flex grow flex-col gap-2">
           <span className="font-nunito text-light-50">Expiration date:</span>
           <input
             type="text"
@@ -58,7 +58,7 @@ export default function FormPayment() {
             onChange={handleInputChange}
           />
         </label>
-        <label htmlFor="cvc" className="flex flex-col gap-2">
+        <label htmlFor="cvc" className="flex grow flex-col gap-2">
           <span className="font-nunito text-light-50">CVC:</span>
           <input
             type="number"
