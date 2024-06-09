@@ -1,0 +1,22 @@
+.accordion-header {
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-header::after {
+  content: url('/assets/icons/24x24/icon-24x24-arrow-down.svg');
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
