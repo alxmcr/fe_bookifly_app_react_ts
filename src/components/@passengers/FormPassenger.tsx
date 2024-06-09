@@ -8,7 +8,7 @@ export default function FormPassenger() {
           name="first-name"
           id="first-name"
           placeholder="Enter your first name"
-          className="h-[40px] rounded-lg border border-riptide-200 bg-transparent px-[12px] py-[9px]"
+          className="h-[40px] rounded-lg border border-riptide-200 bg-transparent px-[12px] py-[9px] text-riptide-200"
           autoComplete="off"
           required
         />
@@ -20,7 +20,7 @@ export default function FormPassenger() {
           name="last-name"
           id="last-name"
           placeholder="Enter your last name"
-          className="h-[40px] rounded-lg border border-riptide-200 bg-transparent px-[12px] py-[9px]"
+          className="h-[40px] rounded-lg border border-riptide-200 bg-transparent px-[12px] py-[9px] text-riptide-200"
           autoComplete="off"
           required
         />
