@@ -1,4 +1,4 @@
-import BoxGroupCardFlights from '../../flights/BoxGroupCardFlights';
+import BoxGroupCardFlights from '../../@flights/BoxGroupCardFlights';
 
 type Props = {
   fromId: number;
