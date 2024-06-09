@@ -1,22 +1,32 @@
-.accordion-header {
+.item-accordion-header {
   cursor: pointer;
   padding: 1rem;
-  background-color: #f0f0f0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid theme('colors.riptide.200');
 }
 
-.accordion-header::-webkit-details-marker {
+.item-accordion-header::-webkit-details-marker {
   display: none;
 }
 
-.accordion-header::after {
+.item-accordion-header::after {
   content: url('/assets/icons/24x24/icon-24x24-arrow-down.svg');
   float: right;
   transition: transform 0.3s ease;
 }
 
-.accordion-content {
+.item-accordion-content {
   padding: 1rem;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
+}
+
+details[open] .accordion-header {
+  background-color: theme('colors.riptide.500');
+  color: theme('colors.light.950');
+}
+
+details[open] .item-accordion-header::after {
+  content: url('/assets/icons/24x24/icon-24x24-arrow-up.svg');
+}
+
+details[open] .item-accordion-content {
+  animation: fadeIn 0.3s ease;
 }

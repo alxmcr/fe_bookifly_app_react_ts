@@ -1,3 +1,5 @@
+import './ItemAccordionPassenger.css';
+
 type Props = {
   summary: string;
   children: React.ReactNode;
