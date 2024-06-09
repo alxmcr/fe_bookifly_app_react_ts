@@ -35,6 +35,13 @@ export default function bookingReducers(state: BookingState, action: BookingActi
       };
     }
 
+    case 'clear_passengers': {
+      return {
+        ...state,
+        passengers: [],
+      };
+    }
+
     default: {
       throw Error(`Unknown action`);
     }
