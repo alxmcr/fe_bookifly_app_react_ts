@@ -1,7 +1,7 @@
 import React from 'react';
 import { BookingContext, BookingDispatchContext } from '../../../@providers/booking/BookingContext';
 import { initialTemporalPassenger } from '../../../mocks/data/mock-provider-data';
-import { addPassengerAction } from '../../../store/booking/@actions/actions';
+import { addPassengerAction, clearPassengersAction } from '../../../store/booking/@actions/actions';
 import BoxFormPassenger from '../BoxFormPassenger';
 import ItemAccordionPassenger from '../accordion-item-passengers/ItemAccordionPassenger';
 import './AccordionPassengers.css';
@@ -11,6 +11,8 @@ export default function AccordionPassengers() {
   const dispatchBooking = React.useContext(BookingDispatchContext);
 
   React.useEffect(() => {
+    clearPassengersAction(dispatchBooking);
+    // Add empty passengers
     for (let index = 1; index <= booking.numberOfTickets; index++) {
       addPassengerAction({ ...initialTemporalPassenger, pa_temporal_id: index }, dispatchBooking);
     }
