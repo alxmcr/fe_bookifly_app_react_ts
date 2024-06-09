@@ -20,7 +20,7 @@
   padding: 1rem;
 }
 
-details[open] .accordion-header {
+details[open] .item-accordion-header {
   background-color: theme('colors.riptide.500');
   color: theme('colors.light.950');
 }
