@@ -16,13 +16,17 @@ export default function AccordionPassengers() {
     }
   }, [booking.numberOfTickets, dispatchBooking]);
 
-  return (
-    <div className="accordion">
-      {booking.passengers.map((passenger, index) => (
-        <ItemAccordionPassenger key={passenger.pa_temporal_id} summary={`Passenger ${index + 1}`}>
-          <BoxFormPassenger />
-        </ItemAccordionPassenger>
-      ))}
-    </div>
-  );
+  if (booking.numberOfTickets > 0) {
+    return (
+      <div className="accordion w-full">
+        {booking.passengers.map((passenger, index) => (
+          <ItemAccordionPassenger key={passenger.pa_temporal_id} summary={`Passenger ${index + 1}`}>
+            <BoxFormPassenger />
+          </ItemAccordionPassenger>
+        ))}
+      </div>
+    );
+  }
+
+  return null;
 }
