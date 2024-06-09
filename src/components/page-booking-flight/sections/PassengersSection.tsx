@@ -1,4 +1,4 @@
-import AccordionPassengers from '../../passengers/AccordionPassengers';
+import AccordionPassengers from '../../passengers/accordion-passengers/AccordionPassengers';
 
 export default function PassengersSection() {
   return (
