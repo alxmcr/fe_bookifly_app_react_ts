@@ -1,7 +1,9 @@
 .item-accordion-header {
   cursor: pointer;
   padding: 1rem;
+  background-color: theme('colors.black');
   color: theme('colors.riptide.200');
+  border-top: 1px solid theme('colors.riptide.200');
   border-bottom: 1px solid theme('colors.riptide.200');
 }
 
@@ -17,6 +19,7 @@
 }
 
 .item-accordion-content {
+  background-color: theme('colors.black');
   padding: 1rem;
 }
 
