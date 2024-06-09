@@ -17,6 +17,13 @@ export type BookingData = {
   passengers: PassengerDataProv[];
 };
 
+export type CheckoutFormData = {
+  ch_card_holder_name: string;
+  ch_card_number: string;
+  ch_expiration_date: string;
+  ch_cvc: string;
+};
+
 export type PaymentData = {
   id: number;
   code: string;
