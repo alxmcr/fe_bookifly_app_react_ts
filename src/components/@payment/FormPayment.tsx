@@ -43,7 +43,7 @@ export default function FormPayment() {
           onChange={handleInputChange}
         />
       </label>
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <label htmlFor="expiration-date" className="flex grow flex-col gap-2">
           <span className="font-nunito text-light-50">Expiration date:</span>
           <input

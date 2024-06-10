@@ -1,13 +1,11 @@
 import MainContentBookingFlightPage from '../components/page-booking-flight/MainContentBookingFlightPage';
-import PassengersSection from '../components/page-booking-flight/sections/PassengersSection';
-import PaymentInfoSection from '../components/page-booking-flight/sections/PaymentInfoSection';
+import DetailsBookingInfoSection from '../components/page-booking-flight/sections/DetailsBookingInfoSection';
 
 export default function BookingFlightPage() {
   return (
     <div>
       <MainContentBookingFlightPage />
-      <PassengersSection />
-      <PaymentInfoSection />
+      <DetailsBookingInfoSection />
     </div>
   );
 }
