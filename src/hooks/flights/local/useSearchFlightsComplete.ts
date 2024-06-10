@@ -3,7 +3,7 @@ import { LoadingStates } from '../../../@types/service/enumsService';
 import { LocalFlightData } from '../../../@types/service/serviceTypes';
 import { LocalFlightServiceImpl } from '../../../services/local/flights/LocalFlightServiceImpl';
 
-export const useLocalSearchFlights = (from = 0, to = 0, departDate = '') => {
+export const useLocalSearchFlightsComplete = (from = 0, to = 0, departDate = '') => {
   const [flights, setFlights] = React.useState<LocalFlightData[]>([]);
   const [errorFlights, setErrorFlights] = React.useState<Error | null>(null);
   const [statusFlights, setStatusFlights] = React.useState(LoadingStates.IDLE);
