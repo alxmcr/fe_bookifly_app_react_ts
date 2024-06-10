@@ -1,6 +1,7 @@
 import MainContentResultsFlightsPage from '../components/page-results-flights/MainContentResultsFlightsPage';
 import FlightsSection from '../components/page-results-flights/sections/FlightsSection';
 import { useSearchFlightsByCityFrom } from '../hooks/flights/local/useSearchFlightsByCityFrom';
+import { useSearchFlightsByCityTo } from '../hooks/flights/local/useSearchFlightsByCityTo';
 
 export default function ResultsFlightsPage() {
   const fromId = 3;
@@ -8,7 +9,9 @@ export default function ResultsFlightsPage() {
   const departDate = '2024-11-02';
   const { flightsByCityFrom, statusFlightsByCityFrom, errorFlightsByCityFrom } =
     useSearchFlightsByCityFrom(fromId);
+  const { flightsByCityTo, statusFlightsByCityTo, errorFlightsByCityTo } = useSearchFlightsByCityTo(toId);
   console.log({ flightsByCityFrom, statusFlightsByCityFrom, errorFlightsByCityFrom });
+  console.log({ flightsByCityTo, statusFlightsByCityTo, errorFlightsByCityTo });
 
   return (
     <div>
