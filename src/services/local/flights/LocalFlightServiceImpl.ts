@@ -108,6 +108,32 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
     });
   }
 
+  findByDepartureDate(departureDate = ''): Promise<LocalFlightData[]> {
+    if (departureDate === null || departureDate === undefined) {
+      throw new Error('Departure date is invalid');
+    }
+
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        try {
+          const flights: LocalFlightData[] = mapperLocalListModelFlightToListFlightData(
+            mockLocalModalListFlights as LocalModelFlightData[],
+          );
+
+          const filter = flights.filter((flight) => {
+            const conditionFilter = new Date(flight.date).getTime() === new Date(departureDate).getTime();
+
+            return conditionFilter;
+          });
+
+          resolve(filter);
+        } catch (error) {
+          reject(error);
+        }
+      }, 300);
+    });
+  }
+
   findAll(): Promise<LocalFlightData[]> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
