@@ -5,4 +5,5 @@ export interface ILocalFlightService {
   findAll(): Promise<LocalFlightData[]>;
   findByRoute(fromId: number, toId: number, departDate: string): Promise<LocalFlightData[]>;
   findByCityFrom(fromId: number): Promise<LocalFlightData[]>;
+  findByCityTo(toId: number): Promise<LocalFlightData[]>;
 }

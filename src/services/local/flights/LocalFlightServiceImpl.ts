@@ -82,6 +82,32 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
     });
   }
 
+  findByCityTo(toId = 0): Promise<LocalFlightData[]> {
+    if (toId === null || toId === undefined) {
+      throw new Error('From is invalid');
+    }
+
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        try {
+          const flights: LocalFlightData[] = mapperLocalListModelFlightToListFlightData(
+            mockLocalModalListFlights as LocalModelFlightData[],
+          );
+
+          const filter = flights.filter((flight) => {
+            const conditionFilter = flight.flight_to.cityId === toId;
+
+            return conditionFilter;
+          });
+
+          resolve(filter);
+        } catch (error) {
+          reject(error);
+        }
+      }, 300);
+    });
+  }
+
   findAll(): Promise<LocalFlightData[]> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
