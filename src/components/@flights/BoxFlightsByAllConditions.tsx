@@ -11,6 +11,11 @@ export default function BoxFlightsByAllConditions() {
     flightFound.toId,
     flightFound.departureDate,
   );
+  console.log('🚀 ~ BoxFlightsByAllConditions ~ { flights, statusFlights, errorFlights }:', {
+    flights,
+    statusFlights,
+    errorFlights,
+  });
 
   if (LoadingStates.PENDING === statusFlights) {
     return <p>Loading flights...</p>;

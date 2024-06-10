@@ -8,6 +8,14 @@ export default function BoxFlightsByDepartureDate() {
   const flightFound = React.useContext(SearchFlightContext);
   const { flightsByDepartureDate, statusFlightsByDepartureDate, errorFlightsByDepartureDate } =
     useSearchFlightsByDepartureDate(flightFound.departureDate);
+  console.log(
+    '🚀 ~ BoxFlightsByDepartureDate ~ flightsByDepartureDate, statusFlightsByDepartureDate, errorFlightsByDepartureDate:',
+    {
+      flightsByDepartureDate,
+      statusFlightsByDepartureDate,
+      errorFlightsByDepartureDate,
+    },
+  );
 
   if (LoadingStates.PENDING === statusFlightsByDepartureDate) {
     return <p>Loading flights...</p>;
