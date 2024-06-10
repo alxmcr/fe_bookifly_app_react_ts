@@ -7,7 +7,7 @@ type Props = {
 
 export default function GroupCardFlights({ flights = [] }: Props) {
   return (
-    <div>
+    <div className="flex flex-col gap-6 md:flex-row">
       {flights.map((flight) => (
         <CardFlight key={flight.flightId} flight={flight} />
       ))}

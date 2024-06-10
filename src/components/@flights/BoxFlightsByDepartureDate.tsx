@@ -21,7 +21,7 @@ export default function BoxFlightsByDepartureDate() {
     if (flightsByDepartureDate.length === 0) {
       return (
         <div>
-          <h3>No flights for this conditions.</h3>
+          <h3 className="text-[25px] text-light-50">No flights for this conditions.</h3>
         </div>
       );
     }
