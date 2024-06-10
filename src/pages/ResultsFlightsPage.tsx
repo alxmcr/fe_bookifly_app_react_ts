@@ -10,16 +10,16 @@ export default function ResultsFlightsPage() {
     <div>
       <MainContentResultsFlightsPage />
       <div className="h-screen w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-no-repeat">
-        <FlightsSection title="Flighs">
+        <FlightsSection title="Flights">
           <BoxFlightsByAllConditions />
         </FlightsSection>
-        <FlightsSection title="Flighs by city from">
+        <FlightsSection title="Flights by city from">
           <BoxFlightsByCityFrom />
         </FlightsSection>
-        <FlightsSection title="Flighs by city to">
+        <FlightsSection title="Flights by city to">
           <BoxFlightsByCityTo />
         </FlightsSection>
-        <FlightsSection title="Flighs by departure date">
+        <FlightsSection title="Flights by departure date">
           <BoxFlightsByDepartureDate />
         </FlightsSection>
       </div>
