@@ -1,5 +1,5 @@
 import { LoadingStates } from '../../@types/service/enumsService';
-import { useLocalSearchFlights } from '../../hooks/flights/local/useSearchFlights';
+import { useLocalSearchFlightsComplete } from '../../hooks/flights/local/useSearchFlightsComplete';
 import GroupCardFlights from './GroupCardFlights';
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function BoxGroupCardFlights({ fromId = 0, toId = 0, departDate = '' }: Props) {
-  const { flights, statusFlights, errorFlights } = useLocalSearchFlights(fromId, toId, departDate);
+  const { flights, statusFlights, errorFlights } = useLocalSearchFlightsComplete(fromId, toId, departDate);
 
   if (LoadingStates.PENDING === statusFlights) {
     return <p>Loading flights...</p>;
