@@ -3,7 +3,7 @@ import { LocalFlightData } from '../../../@types/service/serviceTypes';
 import { LoadingStates } from '../../../@types/service/enumsService';
 import { LocalFlightServiceImpl } from '../../../services/local/flights/LocalFlightServiceImpl';
 
-export const useSearchFlightsByCityFrom = (from = 0) => {
+export const useSearchFlightsByCityFrom = (fromId = 0) => {
   const [flightsByCityFrom, setFlightsByCityFrom] = React.useState<LocalFlightData[]>([]);
   const [errorFlightsByCityFrom, setErrorFlightsByCityFrom] = React.useState<Error | null>(null);
   const [statusFlightsByCityFrom, setStatusFlightsByCityFrom] = React.useState(LoadingStates.IDLE);
@@ -14,7 +14,7 @@ export const useSearchFlightsByCityFrom = (from = 0) => {
         setStatusFlightsByCityFrom(LoadingStates.PENDING);
 
         const service = new LocalFlightServiceImpl();
-        const results = await service.findByCityFrom(from);
+        const results = await service.findByCityFrom(fromId);
 
         setFlightsByCityFrom(results);
         setStatusFlightsByCityFrom(LoadingStates.SUCCESS);
@@ -30,7 +30,7 @@ export const useSearchFlightsByCityFrom = (from = 0) => {
 
     // Fetch
     fetchFlights();
-  }, [from]);
+  }, [fromId]);
 
   return { flightsByCityFrom, statusFlightsByCityFrom, errorFlightsByCityFrom };
 };
