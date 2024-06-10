@@ -2,12 +2,7 @@ import RouteIllustrationDesktop from '../../@illustrations/IllustrationRouteFill
 import IllustrationRouteFillMobile from '../../@illustrations/IllustrationRouteFillMobile';
 import BoxCityHeader from '../../@flights/BoxCityHeader';
 
-type Props = {
-  fromId: number;
-  toId: number;
-};
-
-export default function HeroSectionResultsFlightsPage({ fromId = 0, toId = 0 }: Props) {
+export default function HeroSectionResultsFlightsPage() {
   return (
     <section className="w-full bg-black py-[100px]">
       <div className="mx-auto h-[50px] lg:w-[1028px]">
