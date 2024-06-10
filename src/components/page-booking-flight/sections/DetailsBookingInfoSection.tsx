@@ -8,7 +8,7 @@ export default function DetailsBookingInfoSection() {
 
   if (booking.numberOfTickets === 0) {
     return (
-      <section className="min-h-screen w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-no-repeat py-10">
+      <section className="min-h-screen w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-cover bg-no-repeat py-10">
         <div className="mx-auto lg:w-[1028px]">
           <div className="flex h-screen flex-col items-center justify-center gap-4">
             <h2 className="text-[40px] font-bold text-light-50">No passengers on your booking.</h2>
@@ -19,7 +19,7 @@ export default function DetailsBookingInfoSection() {
   }
 
   return (
-    <section className="min-h-screen w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-no-repeat py-10">
+    <section className="min-h-screen w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-cover bg-no-repeat py-10">
       <div className="mx-auto lg:w-[1028px]">
         <div className="flex flex-col gap-4 md:grid md:grid-cols-2">
           <BoxBookingPassengers />
