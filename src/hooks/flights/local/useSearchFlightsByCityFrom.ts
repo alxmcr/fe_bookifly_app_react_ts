@@ -4,6 +4,7 @@ import { LoadingStates } from '../../../@types/service/enumsService';
 import { LocalFlightServiceImpl } from '../../../services/local/flights/LocalFlightServiceImpl';
 
 export const useSearchFlightsByCityFrom = (fromId = 0) => {
+  console.log("🚀 ~ useSearchFlightsByCityFrom ~ fromId:", fromId)
   const [flightsByCityFrom, setFlightsByCityFrom] = React.useState<LocalFlightData[]>([]);
   const [errorFlightsByCityFrom, setErrorFlightsByCityFrom] = React.useState<Error | null>(null);
   const [statusFlightsByCityFrom, setStatusFlightsByCityFrom] = React.useState(LoadingStates.IDLE);
