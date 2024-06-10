@@ -21,6 +21,14 @@ export default function BoxFlightsByAllConditions() {
   }
 
   if (LoadingStates.SUCCESS === statusFlights && flights) {
+    if (flights.length === 0) {
+      return (
+        <div>
+          <h3>No flights for this conditions.</h3>
+        </div>
+      );
+    }
+
     return (
       <div>
         <GroupCardFlights flights={flights} />

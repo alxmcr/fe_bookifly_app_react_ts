@@ -19,6 +19,14 @@ export default function BoxFlightsByCityTo() {
   }
 
   if (LoadingStates.SUCCESS === statusFlightsByCityTo && flightsByCityTo) {
+    if (flightsByCityTo.length === 0) {
+      return (
+        <div>
+          <h3>No flights for this conditions.</h3>
+        </div>
+      );
+    }
+
     return (
       <div>
         <GroupCardFlights flights={flightsByCityTo} />
