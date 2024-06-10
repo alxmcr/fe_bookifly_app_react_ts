@@ -6,7 +6,7 @@ export default function BoxBookingPassengers() {
   const booking = React.useContext(BookingContext);
 
   return (
-    <div className="flex h-screen flex-col gap-[50px] bg-black px-4 md:px-10 lg:px-0">
+    <div className="flex h-screen flex-col gap-[50px] rounded-lg bg-black px-4 py-2 md:px-10 lg:px-0">
       <h2 className="font-nunito text-[22px] font-extrabold text-riptide-200">
         Passengers information ({booking.numberOfTickets})
       </h2>
