@@ -75,3 +75,7 @@ export const removePassengerAction = (
     },
   });
 };
+
+export const clearPassengersAction = (dispatch: React.Dispatch<BookingAction>) => {
+  dispatch({ type: 'clear_passengers' });
+};

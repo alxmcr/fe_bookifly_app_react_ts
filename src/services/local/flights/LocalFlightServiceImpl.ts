@@ -42,9 +42,8 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
             const conditionByFrom = flight.flight_from.cityId === fromId;
             const conditionByTo = flight.flight_to.cityId === toId;
             const conditionByDate = new Date(flight.date).getTime() === new Date(departDate).getTime();
-            console.log({ id: flight.flightId, conditionByFrom, conditionByTo, conditionByDate });
 
-            const conditionFilter = conditionByFrom && conditionByTo;
+            const conditionFilter = conditionByFrom && conditionByTo && conditionByDate;
 
             return conditionFilter;
           });

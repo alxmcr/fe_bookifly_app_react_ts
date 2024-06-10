@@ -36,8 +36,6 @@ export default function CardFlight({ flight }: Props) {
   };
 
   const handleSelectFlight = () => {
-    console.log('selected', { flight, passengers: totalPassengers });
-
     setFlightSelectedAction(flight.flightId, dispatchBooking);
     setNumberOfTicketsAction(totalPassengers, dispatchBooking);
     setBookingStatusAction('Pending', dispatchBooking);

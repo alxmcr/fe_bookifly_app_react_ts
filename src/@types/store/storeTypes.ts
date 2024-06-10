@@ -91,6 +91,10 @@ type RemovePassengerAction = {
   };
 };
 
+type ClearPassengersAction = {
+  type: 'clear_passengers';
+};
+
 export type BookingState = {
   id: number;
   flightSelectedId: number;
@@ -108,4 +112,5 @@ export type BookingAction =
   | SetBookingDateAction
   | SetBuyerAction
   | AddPassengerAction
-  | RemovePassengerAction;
+  | RemovePassengerAction
+  | ClearPassengersAction;

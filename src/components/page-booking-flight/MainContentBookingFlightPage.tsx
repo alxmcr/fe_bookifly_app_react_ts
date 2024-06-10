@@ -3,7 +3,7 @@ import HeroSectionBookingFlightPage from './sections/HeroSectionBookingFlightPag
 
 export default function MainContentBookingFlightPage() {
   return (
-    <main className="h-[285px] w-full bg-black md:h-[336px] lg:h-[390px]">
+    <main className="h-[346px] w-full bg-black md:h-[336px] lg:h-[390px]">
       <AppHeader />
       <HeroSectionBookingFlightPage />
     </main>

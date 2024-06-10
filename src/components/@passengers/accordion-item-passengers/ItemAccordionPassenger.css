@@ -1,0 +1,38 @@
+.item-accordion-header {
+  cursor: pointer;
+  padding: 1rem;
+  background-color: theme('colors.black');
+  color: theme('colors.riptide.200');
+  border-top: 1px solid theme('colors.riptide.200');
+  border-bottom: 1px solid theme('colors.riptide.200');
+}
+
+.item-accordion-header::-webkit-details-marker {
+  display: none;
+}
+
+.item-accordion-header::after {
+  content: url('/assets/icons/24x24/icon-24x24-arrow-down.svg');
+  color: theme('colors.riptide.200');
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.item-accordion-content {
+  background-color: theme('colors.black');
+  padding: 1rem;
+}
+
+details[open] .item-accordion-header {
+  background-color: theme('colors.riptide.500');
+  color: theme('colors.light.950');
+}
+
+details[open] .item-accordion-header::after {
+  content: url('/assets/icons/24x24/icon-24x24-arrow-up.svg');
+  color: theme('colors.riptide.200');
+}
+
+details[open] .item-accordion-content {
+  animation: fadeIn 0.3s ease;
+}
