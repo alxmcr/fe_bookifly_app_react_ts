@@ -9,11 +9,6 @@ export default function BoxFlightsByCityTo() {
   const { flightsByCityTo, statusFlightsByCityTo, errorFlightsByCityTo } = useSearchFlightsByCityTo(
     flightFound.toId,
   );
-  console.log('🚀 ~ BoxFlightsByCityTo ~ flightsByCityTo, statusFlightsByCityTo, errorFlightsByCityTo:', {
-    flightsByCityTo,
-    statusFlightsByCityTo,
-    errorFlightsByCityTo,
-  });
 
   if (LoadingStates.PENDING === statusFlightsByCityTo) {
     return <p>Loading flights...</p>;
