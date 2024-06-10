@@ -1,9 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SearchFlightDispatchContext } from '../../../@providers/search-flight/SearchFlightContext';
-import { SearchFlightState } from '../../../@types/store/storeTypes';
-import { initialSearchFlightState } from '../../../mocks/data/mock-provider-data';
-import { setTotalPassengersRequiredAction } from '../../../store/search-flight/@actions/actions';
+import {
+  setCityFromAction,
+  setCityToAction,
+  setDepartureDateAction,
+  setTotalPassengersRequiredAction,
+} from '../../../store/search-flight/@actions/actions';
 import Icon24x24Search from '../../@icons/24x24/Icon24x24Search';
 import Icon40x40CircleMinus from '../../@icons/40x40/Icon40x40CircleMinus';
 import Icon40x40CirclePlus from '../../@icons/40x40/Icon40x40CirclePlus';
@@ -11,31 +14,37 @@ import SelectCities from '../selects/SelectCities';
 
 export default function FormSearchFlight() {
   const navigate = useNavigate();
-
-  const [formData, setFormData] = React.useState<SearchFlightState>(initialSearchFlightState);
   const dispatchSearchFlight = React.useContext(SearchFlightDispatchContext);
+  const [fromId, setFromId] = React.useState(0);
+  const [toId, setToId] = React.useState(0);
+  const [totalPassengersRequired, setTotalPassengersRequired] = React.useState(0);
+  const [departureDate, setDepartureDate] = React.useState('');
+
+  const handleFromId = (ev: React.ChangeEvent<HTMLSelectElement>) => {
+    setFromId(Number(ev.target.value));
+    setCityFromAction(Number(ev.target.value), dispatchSearchFlight);
+  };
+
+  const handleToId = (ev: React.ChangeEvent<HTMLSelectElement>) => {
+    setToId(Number(ev.target.value));
+    setCityToAction(Number(ev.target.value), dispatchSearchFlight);
+  };
+
+  const handleDepartureDate = (ev: React.ChangeEvent<HTMLInputElement>) => {
+    setDepartureDate(ev.target.value);
+    setDepartureDateAction(ev.target.value, dispatchSearchFlight);
+  };
 
   const handleAddPassengers = () => {
-    setFormData((prevData) => ({
-      ...prevData,
-      totalPassengersRequired: prevData.totalPassengersRequired + 1,
-    }));
-    setTotalPassengersRequiredAction(formData.totalPassengersRequired + 1, dispatchSearchFlight);
+    setTotalPassengersRequiredAction(totalPassengersRequired + 1, dispatchSearchFlight);
+    setTotalPassengersRequired((prevTotal) => prevTotal + 1);
   };
 
   const handleMinusPassengers = () => {
-    if (formData.totalPassengersRequired - 1 > 0) {
-      setFormData((prevData) => ({
-        ...prevData,
-        totalPassengersRequired: prevData.totalPassengersRequired - 1,
-      }));
-      setTotalPassengersRequiredAction(formData.totalPassengersRequired - 1, dispatchSearchFlight);
+    if (totalPassengersRequired - 1 > 0) {
+      setTotalPassengersRequiredAction(totalPassengersRequired - 1, dispatchSearchFlight);
+      setTotalPassengersRequired((prevTotal) => prevTotal - 1);
     }
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
   };
 
   const onSubmit = (ev: React.FormEvent) => {
@@ -54,8 +63,8 @@ export default function FormSearchFlight() {
           defaultOptionLabel="Select a city from"
           nameSelectElement="fromId"
           htmlFor="flight-from"
-          onChange={handleInputChange}
-          citySelectedId={String(formData.fromId)}
+          onChange={handleFromId}
+          citySelectedId={String(fromId)}
         />
       </div>
       <div className="flex flex-col gap-2">
@@ -66,8 +75,8 @@ export default function FormSearchFlight() {
           defaultOptionLabel="Select a city to"
           nameSelectElement="toId"
           htmlFor="flight-to"
-          onChange={handleInputChange}
-          citySelectedId={String(formData.toId)}
+          onChange={handleToId}
+          citySelectedId={String(toId)}
         />
       </div>
       <div className="flex flex-col gap-2">
@@ -80,8 +89,8 @@ export default function FormSearchFlight() {
             name="departureDate"
             id="departure-date"
             className="h-[40px] w-full rounded-lg p-2"
-            value={formData.departureDate}
-            onChange={handleInputChange}
+            value={departureDate}
+            onChange={handleDepartureDate}
             required
           />
         </div>
@@ -94,7 +103,7 @@ export default function FormSearchFlight() {
           <button
             type="button"
             onClick={handleMinusPassengers}
-            disabled={formData.totalPassengersRequired - 1 === 0}
+            disabled={totalPassengersRequired - 1 === 0}
             className="text-riptide-200 disabled:text-riptide-800"
           >
             <Icon40x40CircleMinus />
@@ -104,7 +113,7 @@ export default function FormSearchFlight() {
             name="totalPassengersRequired"
             id="passengers"
             className="h-[40px] w-[154px] grow rounded-lg p-2 text-center disabled:bg-light-400 lg:w-[106px]"
-            value={formData.totalPassengersRequired}
+            value={totalPassengersRequired}
             required
             disabled
           />
