@@ -10,7 +10,7 @@ export default function DetailsBookingInfoSection() {
 
   if (booking.numberOfTickets === 0) {
     return (
-      <section className="min-h-screen w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-cover bg-no-repeat py-10">
+      <section className="min-h-screen w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-cover bg-no-repeat px-4 py-10 md:px-4 lg:px-0">
         <div className="mx-auto lg:w-[1028px]">
           <div className="flex h-screen flex-col items-center justify-center gap-4">
             <h2 className="text-[40px] font-bold text-light-50">No passengers on your booking.</h2>
@@ -27,14 +27,14 @@ export default function DetailsBookingInfoSection() {
   }
 
   return (
-    <section className="min-h-screen w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-cover bg-no-repeat py-10">
+    <section className="min-h-screen w-full bg-[url('/assets/images/bg-main-bookifly.png')] bg-cover bg-no-repeat px-4 py-10 md:px-4 lg:px-0">
       <div className="mx-auto lg:w-[1028px]">
         <div className="flex flex-col gap-4">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <h2 className="text-[26px] font-bold text-riptide-200">Details booking</h2>
             <NavLink
               to="/flights"
-              className="flex h-[30px] items-center gap-2 rounded-lg bg-riptide-200 p-8 font-nunito font-semibold text-light-950"
+              className="flex h-[30px] grow items-center justify-center gap-2 rounded-lg bg-riptide-200 p-8 font-nunito font-semibold text-light-950 md:grow-0"
             >
               <Icon24x24ArrowLeft />
               <span>Return to flights</span>
