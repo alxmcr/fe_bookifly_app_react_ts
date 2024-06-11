@@ -13,8 +13,8 @@ export type LocalFlightData = {
   arrival: string;
   duration: string;
   price: number;
-  flight_from: LocalCityData;
-  flight_to: LocalCityData;
+  city_departure_from: LocalCityData;
+  city_arrival_to: LocalCityData;
 };
 
 export type LocalTemporalPassengerData = {

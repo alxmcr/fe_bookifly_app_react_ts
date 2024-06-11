@@ -8,12 +8,12 @@
     "arrival": "20:00:00",
     "duration": "01:00:00",
     "price": 700.0,
-    "flight_from": {
+    "city_departure_from": {
       "cityId": 2,
       "name": "Monterrey",
       "country": "México"
     },
-    "flight_to": {
+    "city_arrival_to": {
       "cityId": 10,
       "name": "Santiago",
       "country": "Chile",

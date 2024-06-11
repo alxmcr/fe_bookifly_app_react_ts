@@ -8,12 +8,12 @@
     "arrival": "13:00:00",
     "duration": "02:00:00",
     "price": 250.0,
-    "flight_from": {
+    "city_departure_from": {
       "cityId": 3,
       "name": "Guadalajara",
       "country": "México"
     },
-    "flight_to": {
+    "city_arrival_to": {
       "cityId": 1,
       "name": "Ciudad de México",
       "country": "México"

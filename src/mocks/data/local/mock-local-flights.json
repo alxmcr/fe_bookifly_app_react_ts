@@ -9,14 +9,14 @@
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
@@ -35,14 +35,14 @@
       "arrival": "18:00:00",
       "duration": "03:00:00",
       "price": 400.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 3,
         "name": "Guadalajara",
         "country": "México",
@@ -61,14 +61,14 @@
       "arrival": "20:00:00",
       "duration": "01:00:00",
       "price": 700.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 4,
         "name": "Veracruz",
         "country": "México",
@@ -87,14 +87,14 @@
       "arrival": "22:00:00",
       "duration": "01:00:00",
       "price": 400.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 5,
         "name": "Madrid",
         "country": "Spain",
@@ -113,14 +113,14 @@
       "arrival": "23:00:00",
       "duration": "01:00:00",
       "price": 300.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 6,
         "name": "Paris",
         "country": "France",
@@ -139,14 +139,14 @@
       "arrival": "12:00:00",
       "duration": "02:00:00",
       "price": 300.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 7,
         "name": "Buenos Aires",
         "country": "Argentina",
@@ -165,14 +165,14 @@
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 8,
         "name": "Rio de Janeiro",
         "country": "Brazil",
@@ -191,14 +191,14 @@
       "arrival": "18:00:00",
       "duration": "03:00:00",
       "price": 400.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 9,
         "name": "Brasilia",
         "country": "Brazil",
@@ -217,14 +217,14 @@
       "arrival": "20:00:00",
       "duration": "01:00:00",
       "price": 700.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 10,
         "name": "Santiago",
         "country": "Chile",
@@ -243,14 +243,14 @@
       "arrival": "22:00:00",
       "duration": "01:00:00",
       "price": 400.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 11,
         "name": "Tokio",
         "country": "Japan",
@@ -269,14 +269,14 @@
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
@@ -295,14 +295,14 @@
       "arrival": "18:00:00",
       "duration": "03:00:00",
       "price": 400.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 3,
         "name": "Guadalajara",
         "country": "México",
@@ -321,14 +321,14 @@
       "arrival": "20:00:00",
       "duration": "01:00:00",
       "price": 700.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 4,
         "name": "Veracruz",
         "country": "México",
@@ -347,14 +347,14 @@
       "arrival": "22:00:00",
       "duration": "01:00:00",
       "price": 400.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 5,
         "name": "Madrid",
         "country": "España",
@@ -373,14 +373,14 @@
       "arrival": "23:00:00",
       "duration": "01:00:00",
       "price": 300.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 6,
         "name": "Paris",
         "country": "France",
@@ -399,14 +399,14 @@
       "arrival": "12:00:00",
       "duration": "02:00:00",
       "price": 300.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 7,
         "name": "Buenos Aires",
         "country": "Argentina",
@@ -425,14 +425,14 @@
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 8,
         "name": "Rio de Janeiro",
         "country": "Brazil",
@@ -451,14 +451,14 @@
       "arrival": "18:00:00",
       "duration": "03:00:00",
       "price": 400.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 9,
         "name": "Brasilia",
         "country": "Brazil",
@@ -477,14 +477,14 @@
       "arrival": "20:00:00",
       "duration": "01:00:00",
       "price": 700.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 10,
         "name": "Santiago",
         "country": "Chile",
@@ -503,14 +503,14 @@
       "arrival": "22:00:00",
       "duration": "01:00:00",
       "price": 400.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 11,
         "name": "Tokio",
         "country": "Japan",
@@ -529,14 +529,14 @@
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,
-      "flight_from": {
+      "city_departure_from": {
         "cityId": 3,
         "name": "Guadalajara",
         "country": "México",
         "abbrev": "GDL",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_departure_to": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",

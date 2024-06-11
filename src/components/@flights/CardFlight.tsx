@@ -50,7 +50,7 @@ export default function CardFlight({ flight }: Props) {
       <header className="flex justify-center gap-5">
         <div className="flex flex-col items-center justify-center gap-2">
           <span className="font-nunito text-[18px] font-bold text-riptide-200">
-            {flight.flight_from.abbrev}
+            {flight.city_departure_from.abbrev}
           </span>
           <span className="font-nunito text-[1rem] text-light-50">{flight.departureTime}</span>
         </div>
@@ -59,7 +59,7 @@ export default function CardFlight({ flight }: Props) {
         </div>
         <div className="flex flex-col items-center justify-center gap-2">
           <span className="font-nunito text-[18px] font-bold text-riptide-200">
-            {flight.flight_to.abbrev}
+            {flight.city_arrival_to.abbrev}
           </span>
           <span className="font-nunito text-light-50">{flight.arrival}</span>
         </div>

@@ -8,12 +8,12 @@
     "arrival": "20:00:00",
     "duration": "01:00:00",
     "price": 700.0,
-    "flight_from": {
+    "city_departure_from": {
       "cityId": 1,
       "name": "Ciudad de México",
       "country": "México"
     },
-    "flight_to": {
+    "city_arrival_to": {
       "cityId": 4,
       "name": "Veracruz",
       "country": "México"
