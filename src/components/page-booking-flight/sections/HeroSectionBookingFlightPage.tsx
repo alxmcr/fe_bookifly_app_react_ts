@@ -17,7 +17,7 @@ export default function HeroSectionBookingFlightPage() {
     <section className="w-full bg-black py-[100px]">
       <div className="mx-auto h-[130px] lg:w-[1028px]">
         <div className="flex items-center justify-center">
-          <div className="flex flex-col gap-4 border border-riptide-200 p-4 md:min-w-[320px] md:px-10">
+          <div className="flex flex-col gap-4 p-4 md:min-w-[320px] md:px-10">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-2 text-riptide-200">
                 <Icon36x36Calendar />

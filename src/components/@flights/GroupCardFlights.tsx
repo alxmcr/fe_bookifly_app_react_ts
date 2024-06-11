@@ -7,7 +7,7 @@ type Props = {
 
 export default function GroupCardFlights({ flights = [] }: Props) {
   return (
-    <div>
+    <div className="scrollbar-app flex gap-6 overflow-auto p-3">
       {flights.map((flight) => (
         <CardFlight key={flight.flightId} flight={flight} />
       ))}

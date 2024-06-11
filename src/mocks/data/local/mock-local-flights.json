@@ -97,7 +97,9 @@
       "flight_to": {
         "cityId": 5,
         "name": "Madrid",
-        "country": "España"
+        "country": "Spain",
+        "abbrev": "MAD",
+        "abbrevCountry": "SPA"
       }
     }
   },
@@ -121,7 +123,9 @@
       "flight_to": {
         "cityId": 6,
         "name": "Paris",
-        "country": "France"
+        "country": "France",
+        "abbrev": "PAR",
+        "abbrevCountry": "FRA"
       }
     }
   },
@@ -145,7 +149,9 @@
       "flight_to": {
         "cityId": 7,
         "name": "Buenos Aires",
-        "country": "Argentina"
+        "country": "Argentina",
+        "abbrev": "Bs.As",
+        "abbrevCountry": "ARG"
       }
     }
   },
@@ -169,7 +175,9 @@
       "flight_to": {
         "cityId": 8,
         "name": "Rio de Janeiro",
-        "country": "Brazil"
+        "country": "Brazil",
+        "abbrev": "RIO",
+        "abbrevCountry": "BRA"
       }
     }
   },
@@ -193,7 +201,9 @@
       "flight_to": {
         "cityId": 9,
         "name": "Brasilia",
-        "country": "Brazil"
+        "country": "Brazil",
+        "abbrev": "BRAZ",
+        "abbrevCountry": "BRA"
       }
     }
   },
@@ -217,7 +227,9 @@
       "flight_to": {
         "cityId": 10,
         "name": "Santiago",
-        "country": "Chile"
+        "country": "Chile",
+        "abbrev": "SAN",
+        "abbrevCountry": "CHI"
       }
     }
   },
@@ -241,7 +253,9 @@
       "flight_to": {
         "cityId": 11,
         "name": "Tokio",
-        "country": "Japan"
+        "country": "Japan",
+        "abbrev": "TOK",
+        "abbrevCountry": "JAP"
       }
     }
   },
