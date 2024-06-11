@@ -11,7 +11,9 @@
     "city_departure_from": {
       "cityId": 1,
       "name": "Ciudad de México",
-      "country": "México"
+      "country": "México",
+      "abbrev": "CDMX",
+      "abbrevCountry": "MX"
     },
     "city_destination_to": {
       "cityId": 5,
