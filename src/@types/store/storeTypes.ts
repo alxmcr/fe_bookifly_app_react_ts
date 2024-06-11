@@ -91,6 +91,14 @@ type RemovePassengerAction = {
   };
 };
 
+type UpdatePassengerAction = {
+  type: 'update_passenger';
+  payload: {
+    indexPassenger: number;
+    passengerUpdated: LocalTemporalPassengerData;
+  };
+};
+
 type ClearPassengersAction = {
   type: 'clear_passengers';
 };
@@ -113,4 +121,5 @@ export type BookingAction =
   | SetBuyerAction
   | AddPassengerAction
   | RemovePassengerAction
-  | ClearPassengersAction;
+  | ClearPassengersAction
+  | UpdatePassengerAction;

@@ -1,3 +1,4 @@
+import { LocalTemporalPassengerData } from '../../../@types/service/serviceTypes';
 import { BookingAction, BookingState } from '../../../@types/store/storeTypes';
 
 export default function bookingReducers(state: BookingState, action: BookingAction): BookingState {
@@ -39,6 +40,20 @@ export default function bookingReducers(state: BookingState, action: BookingActi
       return {
         ...state,
         passengers: [],
+      };
+    }
+
+    case 'update_passenger': {
+      const passengersUpdated: LocalTemporalPassengerData[] = [...state.passengers];
+      const { indexPassenger, passengerUpdated } = action.payload;
+
+      if (indexPassenger >= 0 && indexPassenger < state.passengers.length) {
+        passengersUpdated[indexPassenger] = passengerUpdated;
+      }
+
+      return {
+        ...state,
+        passengers: passengersUpdated,
       };
     }
 

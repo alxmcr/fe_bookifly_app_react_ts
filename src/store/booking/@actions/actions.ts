@@ -76,6 +76,20 @@ export const removePassengerAction = (
   });
 };
 
+export const updatePassengerAction = (
+  indexPassenger = 0,
+  passengerUpdated: LocalTemporalPassengerData,
+  dispatch: React.Dispatch<BookingAction>,
+) => {
+  dispatch({
+    type: 'update_passenger',
+    payload: {
+      indexPassenger,
+      passengerUpdated,
+    },
+  });
+};
+
 export const clearPassengersAction = (dispatch: React.Dispatch<BookingAction>) => {
   dispatch({ type: 'clear_passengers' });
 };
