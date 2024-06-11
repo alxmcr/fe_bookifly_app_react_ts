@@ -7,7 +7,7 @@
     "departureTime": "22:00:00",
     "arrival": "23:00:00",
     "duration": "01:00:00",
-    "price": 300.0,
+    "priceAmount": 300.0,
     "city_departure_from": {
       "cityId": 1,
       "name": "Ciudad de México",

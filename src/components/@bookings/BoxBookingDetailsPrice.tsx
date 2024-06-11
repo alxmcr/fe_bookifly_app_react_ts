@@ -26,7 +26,7 @@ export default function BoxBookingDetailsPrice({ flightId = '', numberOfTickets 
           <span className="font-nunito text-light-50">{numberOfTickets} passenger(s)</span>
         </div>
         <div className="flex w-[116px] justify-center rounded-lg bg-light-50 p-2">
-          <span className="font-nunito text-light-950">${numberOfTickets * flight.price}</span>
+          <span className="font-nunito text-light-950">${numberOfTickets * flight.priceAmount}</span>
         </div>
       </>
     );
