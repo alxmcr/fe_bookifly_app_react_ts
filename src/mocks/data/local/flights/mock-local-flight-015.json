@@ -16,7 +16,9 @@
     "flight_to": {
       "cityId": 6,
       "name": "Paris",
-      "country": "France"
+      "country": "France",
+      "abbrev": "PAR",
+      "abbrevCountry": "FRA"
     }
   }
 }
