@@ -11,7 +11,9 @@
     "city_departure_from": {
       "cityId": 3,
       "name": "Guadalajara",
-      "country": "México"
+      "country": "México",
+      "abbrev": "GDL",
+      "abbrevCountry": "MX"
     },
     "city_destination_to": {
       "cityId": 1,

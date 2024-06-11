@@ -11,7 +11,9 @@
     "city_departure_from": {
       "cityId": 2,
       "name": "Monterrey",
-      "country": "México"
+      "country": "México",
+      "abbrev": "MTY",
+      "abbrevCountry": "MX"
     },
     "city_destination_to": {
       "cityId": 8,
