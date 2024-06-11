@@ -1,5 +1,7 @@
 import { BookingState } from '../../@types/store/storeTypes';
 import BoxFlightRoute from '../@flight-route/BoxFlightRoute';
+import BoxBookingDepartureInfo from './BoxBookingDepartureInfo';
+import BoxBookingDetailsPrice from './BoxBookingDetailsPrice';
 
 type Props = {
   booking: BookingState;
@@ -12,11 +14,18 @@ export default function CardBooking({ booking }: Props) {
 
   return (
     <article>
-      <header></header>
+      <header>
+        <BoxBookingDepartureInfo flightId={String(booking.flightSelectedId)} />
+      </header>
       <div>
         <BoxFlightRoute flightId={String(booking.flightSelectedId)} />
       </div>
-      <footer></footer>
+      <footer>
+        <BoxBookingDetailsPrice
+          flightId={String(booking.flightSelectedId)}
+          numberOfTickets={booking.numberOfTickets}
+        />
+      </footer>
     </article>
   );
 }
