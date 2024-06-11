@@ -8,7 +8,7 @@ type Props = {
 
 export default function BoxBookingDepartureInfo({ flight }: Props) {
   return (
-    <>
+    <div className="flex items-center justify-between gap-1">
       <div className="flex items-center gap-2 text-riptide-200">
         <Icon36x36Calendar />
         <span className="font-nunito">{flight.departureDate}</span>
@@ -17,6 +17,6 @@ export default function BoxBookingDepartureInfo({ flight }: Props) {
         <Icon36x36AlarmOutlineRounded />
         <span className="font-nunito">{flight.departureTime}</span>
       </div>
-    </>
+    </div>
   );
 }

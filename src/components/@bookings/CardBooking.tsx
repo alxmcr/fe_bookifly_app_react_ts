@@ -22,7 +22,7 @@ export default function CardBooking({ booking }: Props) {
 
   if (LoadingStates.SUCCESS === statusFlight && flight) {
     return (
-      <article>
+      <article className="flex flex-col gap-3">
         <header>
           <BoxBookingDepartureInfo flight={flight} />
         </header>
