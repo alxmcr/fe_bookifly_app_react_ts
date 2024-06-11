@@ -28,7 +28,7 @@ export default function CardFlight({ flight }: Props) {
   const { arrivalTime } = calculateArrivalDateTime(
     new Date(flight.departureDate),
     flight.departureTime,
-    flight.durationInMinutesInMinutes,
+    flight.durationInMinutes,
   );
 
   const handleAddPassengers = () => {
