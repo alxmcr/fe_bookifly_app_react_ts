@@ -2,6 +2,7 @@ import React from 'react';
 import { BookingContext } from '../../../@providers/booking/BookingContext';
 import BoxBookingCheckoutInfo from '../boxes/BoxBookingCheckoutInfo';
 import BoxBookingPassengers from '../boxes/BoxBookingPassengers';
+import { NavLink } from 'react-router-dom';
 
 export default function DetailsBookingInfoSection() {
   const booking = React.useContext(BookingContext);
@@ -12,6 +13,12 @@ export default function DetailsBookingInfoSection() {
         <div className="mx-auto lg:w-[1028px]">
           <div className="flex h-screen flex-col items-center justify-center gap-4">
             <h2 className="text-[40px] font-bold text-light-50">No passengers on your booking.</h2>
+            <NavLink
+              to="/flights"
+              className="flex h-[40px] items-center rounded-lg border border-riptide-200 p-8 text-riptide-200"
+            >
+              Return to flights
+            </NavLink>
           </div>
         </div>
       </section>
