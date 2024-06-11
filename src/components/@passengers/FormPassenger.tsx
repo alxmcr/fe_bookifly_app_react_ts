@@ -14,22 +14,14 @@ export default function FormPassenger({ indexPassenger = 0 }: Props) {
 
   const handleFirstName = (ev: React.ChangeEvent<HTMLInputElement>) => {
     setFirstName(ev.target.value);
-
-    if (indexPassenger >= 0 && indexPassenger < booking.passengers.length) {
-      const passengerToUpdate = booking.passengers[indexPassenger];
-
-      if (passengerToUpdate !== undefined) {
-        updatePassengerAction(
-          indexPassenger,
-          { ...passengerToUpdate, pa_firstName: ev.target.value },
-          dispatchBooking,
-        );
-      }
-    }
   };
 
   const handleLastname = (ev: React.ChangeEvent<HTMLInputElement>) => {
     setLastname(ev.target.value);
+  };
+
+  const handleSubmit = (ev: React.FormEvent) => {
+    ev.preventDefault();
 
     if (indexPassenger >= 0 && indexPassenger < booking.passengers.length) {
       const passengerToUpdate = booking.passengers[indexPassenger];
@@ -37,15 +29,11 @@ export default function FormPassenger({ indexPassenger = 0 }: Props) {
       if (passengerToUpdate !== undefined) {
         updatePassengerAction(
           indexPassenger,
-          { ...passengerToUpdate, pa_lastName: ev.target.value },
+          { ...passengerToUpdate, pa_firstName: firstName, pa_lastName: lastname },
           dispatchBooking,
         );
       }
     }
-  };
-
-  const handleSubmit = (ev: React.FormEvent) => {
-    ev.preventDefault();
   };
 
   return (
@@ -78,6 +66,14 @@ export default function FormPassenger({ indexPassenger = 0 }: Props) {
           value={lastname}
         />
       </label>
+      <div>
+        <button
+          type="submit"
+          className="h-[54px] w-full rounded-lg bg-riptide-200 font-nunito font-bold text-black"
+        >
+          Save data
+        </button>
+      </div>
     </form>
   );
 }
