@@ -8,6 +8,7 @@
     "arrival": "13:00:00",
     "durationInMinutes": 300,
     "priceAmount": 250.0,
+    "priceCurrency": "$",
     "city_departure_from": {
       "cityId": 2,
       "name": "Monterrey",
