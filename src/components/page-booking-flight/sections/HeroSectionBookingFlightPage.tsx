@@ -3,7 +3,7 @@ import Icon36x36AlarmOutlineRounded from '../../@icons/36x36/Icon36x36AlarmOutli
 import Icon36x36Calendar from '../../@icons/36x36/Icon36x36Calendar';
 import RouteIllustrationDesktop from '../../@illustrations/IllustrationRouteFillDesktop';
 import IllustrationRouteFillMobile from '../../@illustrations/IllustrationRouteFillMobile';
-import BoxCityHeader from '../../@flights/BoxCityHeader';
+import BoxCityHeader from '../../@cities/BoxCityHeader';
 
 export default function HeroSectionBookingFlightPage() {
   const fromId = 3;
