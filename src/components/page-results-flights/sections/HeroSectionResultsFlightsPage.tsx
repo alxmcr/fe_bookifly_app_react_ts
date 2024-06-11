@@ -1,6 +1,6 @@
 import RouteIllustrationDesktop from '../../@illustrations/IllustrationRouteFillDesktop';
 import IllustrationRouteFillMobile from '../../@illustrations/IllustrationRouteFillMobile';
-import BoxCityHeader from '../../@flights/BoxCityHeader';
+import BoxCityHeader from '../../@cities/BoxCityHeader';
 import { SearchFlightContext } from '../../../@providers/search-flight/SearchFlightContext';
 import React from 'react';
 
