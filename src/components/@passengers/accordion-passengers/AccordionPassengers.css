@@ -1,5 +1,3 @@
 .accordion {
   border: 1px solid theme('colors.riptide.200');
-  max-width: 400px; /* Adjust as needed */
-  margin: 0 auto;
 }
