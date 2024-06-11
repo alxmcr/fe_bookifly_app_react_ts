@@ -99,16 +99,16 @@ export default function CardFlight({ flight }: Props) {
           </div>
         </div>
       </div>
-      <footer className="flex items-end justify-between">
-        <div className="flex flex-col justify-center gap-2">
+      <footer className="flex items-end justify-between gap-2">
+        <div className="flex grow flex-col justify-center gap-2">
           <span className="text-riptide-200">Total all passengers</span>
           <div className="flex h-[40px] w-[154px] items-center justify-center rounded-lg bg-light-50">
             <span className="font-nunito font-bold text-light-950">${flight.price * totalPassengers}</span>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex grow flex-col gap-2">
           <button
-            className="flex h-[40px] w-[108px] items-center justify-center gap-3 rounded-lg bg-riptide-200 text-light-950"
+            className="flex h-[40px] items-center justify-center gap-3 rounded-lg bg-riptide-200 px-4 text-light-950"
             onClick={handleSelectFlight}
           >
             <span className="font-nunito font-bold">Select</span>
