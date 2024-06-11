@@ -1,31 +1,38 @@
+import { LoadingStates } from '../../@types/service/enumsService';
+import { useLocalFlight } from '../../hooks/flights/local/useFlight';
 import BoxCityHeader from '../@cities/BoxCityHeader';
 import IllustrationRouteFillDesktop from '../@illustrations/IllustrationRouteFillDesktop';
 import IllustrationRouteFillMobile from '../@illustrations/IllustrationRouteFillMobile';
 
 type Props = {
-  fromId: number;
-  toId: number;
+  flightId: string;
 };
 
-export default function BoxFlightRoute({ fromId = 0, toId = 0 }: Props) {
-  if (fromId <= 0) {
-    return null;
+export default function BoxFlightRoute({ flightId = '' }: Props) {
+  const { flight, errorFlight, statusFlight } = useLocalFlight(flightId);
+
+  if (LoadingStates.PENDING === statusFlight) {
+    return <p>Loading Flight...</p>;
   }
 
-  if (toId <= 0) {
-    return null;
+  if (LoadingStates.ERROR === statusFlight && errorFlight) {
+    return <p>{errorFlight.message}</p>;
   }
 
-  return (
-    <div className="flex items-center justify-between gap-4">
-      <BoxCityHeader cityId={fromId} />
-      <div className="lg:hidden">
-        <IllustrationRouteFillMobile />
+  if (LoadingStates.SUCCESS === statusFlight && flight) {
+    return (
+      <div className="flex items-center justify-between gap-4">
+        <BoxCityHeader cityId={flight.flight_from.cityId} />
+        <div className="lg:hidden">
+          <IllustrationRouteFillMobile />
+        </div>
+        <div className="hidden lg:flex">
+          <IllustrationRouteFillDesktop />
+        </div>
+        <BoxCityHeader cityId={flight.flight_to.cityId} />
       </div>
-      <div className="hidden lg:flex">
-        <IllustrationRouteFillDesktop />
-      </div>
-      <BoxCityHeader cityId={toId} />
-    </div>
-  );
+    );
+  }
+
+  return null;
 }
