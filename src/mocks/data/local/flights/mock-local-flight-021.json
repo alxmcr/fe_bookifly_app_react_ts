@@ -3,17 +3,17 @@
   "pk": 21,
   "fields": {
     "flightId": 21,
-    "date": "2024-08-03",
-    "departure": "11:00:00",
+    "departureDate": "2024-08-03",
+    "departureTime": "11:00:00",
     "arrival": "13:00:00",
     "duration": "02:00:00",
-    "price": 250.0,
-    "flight_from": {
+    "priceAmount": 250.0,
+    "city_departure_from": {
       "cityId": 3,
       "name": "Guadalajara",
       "country": "México"
     },
-    "flight_to": {
+    "city_destination_to": {
       "cityId": 1,
       "name": "Ciudad de México",
       "country": "México"

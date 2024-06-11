@@ -3,17 +3,17 @@
   "pk": 19,
   "fields": {
     "flightId": 19,
-    "date": "2024-11-02",
-    "departure": "19:00:00",
+    "departureDate": "2024-11-02",
+    "departureTime": "19:00:00",
     "arrival": "20:00:00",
     "duration": "01:00:00",
-    "price": 700.0,
-    "flight_from": {
+    "priceAmount": 700.0,
+    "city_departure_from": {
       "cityId": 2,
       "name": "Monterrey",
       "country": "México"
     },
-    "flight_to": {
+    "city_destination_to": {
       "cityId": 10,
       "name": "Santiago",
       "country": "Chile",

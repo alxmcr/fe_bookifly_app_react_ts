@@ -3,17 +3,17 @@
   "pk": 7,
   "fields": {
     "flightId": 7,
-    "date": "2024-11-01",
-    "departure": "11:00:00",
+    "departureDate": "2024-11-01",
+    "departureTime": "11:00:00",
     "arrival": "13:00:00",
     "duration": "02:00:00",
-    "price": 250.0,
-    "flight_from": {
+    "priceAmount": 250.0,
+    "city_departure_from": {
       "cityId": 1,
       "name": "Ciudad de México",
       "country": "México"
     },
-    "flight_to": {
+    "city_destination_to": {
       "cityId": 8,
       "name": "Rio de Janeiro",
       "country": "Brazil",

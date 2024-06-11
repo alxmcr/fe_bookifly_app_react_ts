@@ -22,14 +22,14 @@ export default function BoxFlightRoute({ flightId = '' }: Props) {
   if (LoadingStates.SUCCESS === statusFlight && flight) {
     return (
       <div className="flex items-center justify-between gap-4">
-        <BoxCityHeader cityId={flight.flight_from.cityId} />
+        <BoxCityHeader cityId={flight.city_departure_from.cityId} />
         <div className="lg:hidden">
           <IllustrationRouteFillMobile />
         </div>
         <div className="hidden lg:flex">
           <IllustrationRouteFillDesktop />
         </div>
-        <BoxCityHeader cityId={flight.flight_to.cityId} />
+        <BoxCityHeader cityId={flight.city_destination_to.cityId} />
       </div>
     );
   }

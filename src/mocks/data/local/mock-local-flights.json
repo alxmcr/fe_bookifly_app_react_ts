@@ -4,19 +4,19 @@
     "pk": 1,
     "fields": {
       "flightId": 1,
-      "date": "2024-08-01",
-      "departure": "11:00:00",
+      "departureDate": "2024-08-01",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
-      "price": 250.0,
-      "flight_from": {
+      "priceAmount": 250.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
@@ -30,19 +30,19 @@
     "pk": 2,
     "fields": {
       "flightId": 2,
-      "date": "2024-11-01",
-      "departure": "15:00:00",
+      "departureDate": "2024-11-01",
+      "departureTime": "15:00:00",
       "arrival": "18:00:00",
       "duration": "03:00:00",
-      "price": 400.0,
-      "flight_from": {
+      "priceAmount": 400.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 3,
         "name": "Guadalajara",
         "country": "México",
@@ -56,19 +56,19 @@
     "pk": 3,
     "fields": {
       "flightId": 3,
-      "date": "2024-11-01",
-      "departure": "19:00:00",
+      "departureDate": "2024-11-01",
+      "departureTime": "19:00:00",
       "arrival": "20:00:00",
       "duration": "01:00:00",
-      "price": 700.0,
-      "flight_from": {
+      "priceAmount": 700.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 4,
         "name": "Veracruz",
         "country": "México",
@@ -82,19 +82,19 @@
     "pk": 4,
     "fields": {
       "flightId": 4,
-      "date": "",
-      "departure": "21:00:00",
+      "departureDate": "",
+      "departureTime": "21:00:00",
       "arrival": "22:00:00",
       "duration": "01:00:00",
-      "price": 400.0,
-      "flight_from": {
+      "priceAmount": 400.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 5,
         "name": "Madrid",
         "country": "Spain",
@@ -108,19 +108,19 @@
     "pk": 5,
     "fields": {
       "flightId": 5,
-      "date": "2024-11-01",
-      "departure": "22:00:00",
+      "departureDate": "2024-11-01",
+      "departureTime": "22:00:00",
       "arrival": "23:00:00",
       "duration": "01:00:00",
-      "price": 300.0,
-      "flight_from": {
+      "priceAmount": 300.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 6,
         "name": "Paris",
         "country": "France",
@@ -134,19 +134,19 @@
     "pk": 6,
     "fields": {
       "flightId": 6,
-      "date": "2024-11-01",
-      "departure": "10:00:00",
+      "departureDate": "2024-11-01",
+      "departureTime": "10:00:00",
       "arrival": "12:00:00",
       "duration": "02:00:00",
-      "price": 300.0,
-      "flight_from": {
+      "priceAmount": 300.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 7,
         "name": "Buenos Aires",
         "country": "Argentina",
@@ -160,19 +160,19 @@
     "pk": 7,
     "fields": {
       "flightId": 7,
-      "date": "2024-11-01",
-      "departure": "11:00:00",
+      "departureDate": "2024-11-01",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
-      "price": 250.0,
-      "flight_from": {
+      "priceAmount": 250.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 8,
         "name": "Rio de Janeiro",
         "country": "Brazil",
@@ -186,19 +186,19 @@
     "pk": 8,
     "fields": {
       "flightId": 8,
-      "date": "2024-11-01",
-      "departure": "15:00:00",
+      "departureDate": "2024-11-01",
+      "departureTime": "15:00:00",
       "arrival": "18:00:00",
       "duration": "03:00:00",
-      "price": 400.0,
-      "flight_from": {
+      "priceAmount": 400.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 9,
         "name": "Brasilia",
         "country": "Brazil",
@@ -212,19 +212,19 @@
     "pk": 9,
     "fields": {
       "flightId": 9,
-      "date": "2024-11-01",
-      "departure": "19:00:00",
+      "departureDate": "2024-11-01",
+      "departureTime": "19:00:00",
       "arrival": "20:00:00",
       "duration": "01:00:00",
-      "price": 700.0,
-      "flight_from": {
+      "priceAmount": 700.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 10,
         "name": "Santiago",
         "country": "Chile",
@@ -238,19 +238,19 @@
     "pk": 10,
     "fields": {
       "flightId": 10,
-      "date": "2024-11-01",
-      "departure": "21:00:00",
+      "departureDate": "2024-11-01",
+      "departureTime": "21:00:00",
       "arrival": "22:00:00",
       "duration": "01:00:00",
-      "price": 400.0,
-      "flight_from": {
+      "priceAmount": 400.0,
+      "city_departure_from": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 11,
         "name": "Tokio",
         "country": "Japan",
@@ -264,19 +264,19 @@
     "pk": 11,
     "fields": {
       "flightId": 11,
-      "date": "2024-11-02",
-      "departure": "11:00:00",
+      "departureDate": "2024-11-02",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
-      "price": 250.0,
-      "flight_from": {
+      "priceAmount": 250.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
@@ -290,19 +290,19 @@
     "pk": 12,
     "fields": {
       "flightId": 12,
-      "date": "2024-11-02",
-      "departure": "15:00:00",
+      "departureDate": "2024-11-02",
+      "departureTime": "15:00:00",
       "arrival": "18:00:00",
       "duration": "03:00:00",
-      "price": 400.0,
-      "flight_from": {
+      "priceAmount": 400.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 3,
         "name": "Guadalajara",
         "country": "México",
@@ -316,19 +316,19 @@
     "pk": 13,
     "fields": {
       "flightId": 13,
-      "date": "2024-11-02",
-      "departure": "19:00:00",
+      "departureDate": "2024-11-02",
+      "departureTime": "19:00:00",
       "arrival": "20:00:00",
       "duration": "01:00:00",
-      "price": 700.0,
-      "flight_from": {
+      "priceAmount": 700.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 4,
         "name": "Veracruz",
         "country": "México",
@@ -342,19 +342,19 @@
     "pk": 14,
     "fields": {
       "flightId": 14,
-      "date": "2024-11-02",
-      "departure": "21:00:00",
+      "departureDate": "2024-11-02",
+      "departureTime": "21:00:00",
       "arrival": "22:00:00",
       "duration": "01:00:00",
-      "price": 400.0,
-      "flight_from": {
+      "priceAmount": 400.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 5,
         "name": "Madrid",
         "country": "España",
@@ -368,19 +368,19 @@
     "pk": 15,
     "fields": {
       "flightId": 15,
-      "date": "2024-11-02",
-      "departure": "22:00:00",
+      "departureDate": "2024-11-02",
+      "departureTime": "22:00:00",
       "arrival": "23:00:00",
       "duration": "01:00:00",
-      "price": 300.0,
-      "flight_from": {
+      "priceAmount": 300.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 6,
         "name": "Paris",
         "country": "France",
@@ -394,19 +394,19 @@
     "pk": 16,
     "fields": {
       "flightId": 16,
-      "date": "2024-11-02",
-      "departure": "10:00:00",
+      "departureDate": "2024-11-02",
+      "departureTime": "10:00:00",
       "arrival": "12:00:00",
       "duration": "02:00:00",
-      "price": 300.0,
-      "flight_from": {
+      "priceAmount": 300.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 7,
         "name": "Buenos Aires",
         "country": "Argentina",
@@ -420,19 +420,19 @@
     "pk": 17,
     "fields": {
       "flightId": 17,
-      "date": "2024-11-02",
-      "departure": "11:00:00",
+      "departureDate": "2024-11-02",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
-      "price": 250.0,
-      "flight_from": {
+      "priceAmount": 250.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 8,
         "name": "Rio de Janeiro",
         "country": "Brazil",
@@ -446,19 +446,19 @@
     "pk": 18,
     "fields": {
       "flightId": 18,
-      "date": "2024-11-01",
-      "departure": "15:00:00",
+      "departureDate": "2024-11-01",
+      "departureTime": "15:00:00",
       "arrival": "18:00:00",
       "duration": "03:00:00",
-      "price": 400.0,
-      "flight_from": {
+      "priceAmount": 400.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 9,
         "name": "Brasilia",
         "country": "Brazil",
@@ -472,19 +472,19 @@
     "pk": 19,
     "fields": {
       "flightId": 19,
-      "date": "2024-11-02",
-      "departure": "19:00:00",
+      "departureDate": "2024-11-02",
+      "departureTime": "19:00:00",
       "arrival": "20:00:00",
       "duration": "01:00:00",
-      "price": 700.0,
-      "flight_from": {
+      "priceAmount": 700.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 10,
         "name": "Santiago",
         "country": "Chile",
@@ -498,19 +498,19 @@
     "pk": 20,
     "fields": {
       "flightId": 20,
-      "date": "2024-11-02",
-      "departure": "21:00:00",
+      "departureDate": "2024-11-02",
+      "departureTime": "21:00:00",
       "arrival": "22:00:00",
       "duration": "01:00:00",
-      "price": 400.0,
-      "flight_from": {
+      "priceAmount": 400.0,
+      "city_departure_from": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 11,
         "name": "Tokio",
         "country": "Japan",
@@ -524,19 +524,19 @@
     "pk": 21,
     "fields": {
       "flightId": 21,
-      "date": "2024-08-03",
-      "departure": "11:00:00",
+      "departureDate": "2024-08-03",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
-      "price": 250.0,
-      "flight_from": {
+      "priceAmount": 250.0,
+      "city_departure_from": {
         "cityId": 3,
         "name": "Guadalajara",
         "country": "México",
         "abbrev": "GDL",
         "abbrevCountry": "MX"
       },
-      "flight_to": {
+      "city_destination_to": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
