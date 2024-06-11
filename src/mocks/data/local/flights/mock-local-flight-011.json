@@ -6,7 +6,7 @@
     "departureDate": "2024-11-02",
     "departureTime": "11:00:00",
     "arrival": "13:00:00",
-    "duration": "02:00:00",
+    "durationInMinutes": 300,
     "priceAmount": 250.0,
     "city_departure_from": {
       "cityId": 2,
