@@ -5,7 +5,6 @@
     "flightId": 9,
     "departureDate": "2024-11-01",
     "departureTime": "19:00:00",
-    "arrival": "20:00:00",
     "durationInMinutes": 340,
     "priceAmount": 700.0,
     "priceCurrency": "$",

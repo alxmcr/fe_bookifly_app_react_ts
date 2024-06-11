@@ -10,7 +10,6 @@ export type LocalFlightData = {
   flightId: number;
   departureDate: string;
   departureTime: string;
-  arrival: string;
   durationInMinutesInMinutes: number;
   priceAmount: number;
   priceCurrency: string;
