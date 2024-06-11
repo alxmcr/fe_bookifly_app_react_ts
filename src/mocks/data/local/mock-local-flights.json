@@ -5,7 +5,7 @@
     "fields": {
       "flightId": 1,
       "departureDate": "2024-08-01",
-      "departure": "11:00:00",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,
@@ -31,7 +31,7 @@
     "fields": {
       "flightId": 2,
       "departureDate": "2024-11-01",
-      "departure": "15:00:00",
+      "departureTime": "15:00:00",
       "arrival": "18:00:00",
       "duration": "03:00:00",
       "price": 400.0,
@@ -57,7 +57,7 @@
     "fields": {
       "flightId": 3,
       "departureDate": "2024-11-01",
-      "departure": "19:00:00",
+      "departureTime": "19:00:00",
       "arrival": "20:00:00",
       "duration": "01:00:00",
       "price": 700.0,
@@ -83,7 +83,7 @@
     "fields": {
       "flightId": 4,
       "departureDate": "",
-      "departure": "21:00:00",
+      "departureTime": "21:00:00",
       "arrival": "22:00:00",
       "duration": "01:00:00",
       "price": 400.0,
@@ -109,7 +109,7 @@
     "fields": {
       "flightId": 5,
       "departureDate": "2024-11-01",
-      "departure": "22:00:00",
+      "departureTime": "22:00:00",
       "arrival": "23:00:00",
       "duration": "01:00:00",
       "price": 300.0,
@@ -135,7 +135,7 @@
     "fields": {
       "flightId": 6,
       "departureDate": "2024-11-01",
-      "departure": "10:00:00",
+      "departureTime": "10:00:00",
       "arrival": "12:00:00",
       "duration": "02:00:00",
       "price": 300.0,
@@ -161,7 +161,7 @@
     "fields": {
       "flightId": 7,
       "departureDate": "2024-11-01",
-      "departure": "11:00:00",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,
@@ -187,7 +187,7 @@
     "fields": {
       "flightId": 8,
       "departureDate": "2024-11-01",
-      "departure": "15:00:00",
+      "departureTime": "15:00:00",
       "arrival": "18:00:00",
       "duration": "03:00:00",
       "price": 400.0,
@@ -213,7 +213,7 @@
     "fields": {
       "flightId": 9,
       "departureDate": "2024-11-01",
-      "departure": "19:00:00",
+      "departureTime": "19:00:00",
       "arrival": "20:00:00",
       "duration": "01:00:00",
       "price": 700.0,
@@ -239,7 +239,7 @@
     "fields": {
       "flightId": 10,
       "departureDate": "2024-11-01",
-      "departure": "21:00:00",
+      "departureTime": "21:00:00",
       "arrival": "22:00:00",
       "duration": "01:00:00",
       "price": 400.0,
@@ -265,7 +265,7 @@
     "fields": {
       "flightId": 11,
       "departureDate": "2024-11-02",
-      "departure": "11:00:00",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,
@@ -291,7 +291,7 @@
     "fields": {
       "flightId": 12,
       "departureDate": "2024-11-02",
-      "departure": "15:00:00",
+      "departureTime": "15:00:00",
       "arrival": "18:00:00",
       "duration": "03:00:00",
       "price": 400.0,
@@ -317,7 +317,7 @@
     "fields": {
       "flightId": 13,
       "departureDate": "2024-11-02",
-      "departure": "19:00:00",
+      "departureTime": "19:00:00",
       "arrival": "20:00:00",
       "duration": "01:00:00",
       "price": 700.0,
@@ -343,7 +343,7 @@
     "fields": {
       "flightId": 14,
       "departureDate": "2024-11-02",
-      "departure": "21:00:00",
+      "departureTime": "21:00:00",
       "arrival": "22:00:00",
       "duration": "01:00:00",
       "price": 400.0,
@@ -369,7 +369,7 @@
     "fields": {
       "flightId": 15,
       "departureDate": "2024-11-02",
-      "departure": "22:00:00",
+      "departureTime": "22:00:00",
       "arrival": "23:00:00",
       "duration": "01:00:00",
       "price": 300.0,
@@ -395,7 +395,7 @@
     "fields": {
       "flightId": 16,
       "departureDate": "2024-11-02",
-      "departure": "10:00:00",
+      "departureTime": "10:00:00",
       "arrival": "12:00:00",
       "duration": "02:00:00",
       "price": 300.0,
@@ -421,7 +421,7 @@
     "fields": {
       "flightId": 17,
       "departureDate": "2024-11-02",
-      "departure": "11:00:00",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,
@@ -447,7 +447,7 @@
     "fields": {
       "flightId": 18,
       "departureDate": "2024-11-01",
-      "departure": "15:00:00",
+      "departureTime": "15:00:00",
       "arrival": "18:00:00",
       "duration": "03:00:00",
       "price": 400.0,
@@ -473,7 +473,7 @@
     "fields": {
       "flightId": 19,
       "departureDate": "2024-11-02",
-      "departure": "19:00:00",
+      "departureTime": "19:00:00",
       "arrival": "20:00:00",
       "duration": "01:00:00",
       "price": 700.0,
@@ -499,7 +499,7 @@
     "fields": {
       "flightId": 20,
       "departureDate": "2024-11-02",
-      "departure": "21:00:00",
+      "departureTime": "21:00:00",
       "arrival": "22:00:00",
       "duration": "01:00:00",
       "price": 400.0,
@@ -525,7 +525,7 @@
     "fields": {
       "flightId": 21,
       "departureDate": "2024-08-03",
-      "departure": "11:00:00",
+      "departureTime": "11:00:00",
       "arrival": "13:00:00",
       "duration": "02:00:00",
       "price": 250.0,

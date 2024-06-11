@@ -52,7 +52,7 @@ export default function CardFlight({ flight }: Props) {
           <span className="font-nunito text-[18px] font-bold text-riptide-200">
             {flight.flight_from.abbrev}
           </span>
-          <span className="font-nunito text-[1rem] text-light-50">{flight.departure}</span>
+          <span className="font-nunito text-[1rem] text-light-50">{flight.departureTime}</span>
         </div>
         <div className="flex items-center">
           <IllustrationRouteFillMobile />

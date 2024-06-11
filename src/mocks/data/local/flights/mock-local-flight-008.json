@@ -4,7 +4,7 @@
   "fields": {
     "flightId": 8,
     "departureDate": "2024-11-01",
-    "departure": "15:00:00",
+    "departureTime": "15:00:00",
     "arrival": "18:00:00",
     "duration": "03:00:00",
     "price": 400.0,
