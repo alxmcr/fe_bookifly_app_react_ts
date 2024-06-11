@@ -15,6 +15,7 @@ import {
 } from '../../store/booking/@actions/actions';
 import { format } from 'date-fns';
 import { initialTemporalPassenger } from '../../mocks/data/mock-provider-data';
+import { calculateArrivalDateTime } from '../../helpers/helpersDate';
 
 type Props = {
   flight: LocalFlightData;
@@ -24,6 +25,11 @@ export default function CardFlight({ flight }: Props) {
   const navigate = useNavigate();
   const dispatchBooking = React.useContext(BookingDispatchContext);
   const [totalPassengers, setTotalPassengers] = React.useState(0);
+  const { arrivalTime } = calculateArrivalDateTime(
+    new Date(flight.departureDate),
+    flight.departureTime,
+    flight.durationInMinutesInMinutes,
+  );
 
   const handleAddPassengers = () => {
     setTotalPassengers((prePass) => prePass + 1);
@@ -61,7 +67,7 @@ export default function CardFlight({ flight }: Props) {
           <span className="font-nunito text-[18px] font-bold text-riptide-200">
             {flight.city_destination_to.abbrev}
           </span>
-          <span className="font-nunito text-light-50">{flight.arrival}</span>
+          <span className="font-nunito text-light-50">{arrivalTime}</span>
         </div>
       </header>
       <div className="flex justify-between border-t border-riptide-200 pt-4">
