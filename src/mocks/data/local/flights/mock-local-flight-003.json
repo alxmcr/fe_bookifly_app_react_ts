@@ -18,7 +18,9 @@
     "city_destination_to": {
       "cityId": 4,
       "name": "Veracruz",
-      "country": "México"
+      "country": "México",
+      "abbrev": "VER",
+      "abbrevCountry": "MX"
     }
   }
 }
