@@ -2,9 +2,13 @@ import { addMinutes, format } from 'date-fns';
 
 export function calculateArrivalDateTime(
   departureDate: Date,
-  departureTime: string,
-  durationMinutes: number,
+  departureTime = '',
+  durationMinutes = 0,
 ): { arrivalDate: string; arrivalTime: string } {
+  if (departureDate === null || departureDate === undefined) {
+    return { arrivalDate: '', arrivalTime: '' };
+  }
+
   // Convert departure time to Date object
   const [hours = 0, minutes = 0, seconds = 0] = departureTime.split(':').map(Number);
   departureDate.setHours(hours);
