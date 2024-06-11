@@ -8,7 +8,7 @@ export type LocalCityData = {
 
 export type LocalFlightData = {
   flightId: number;
-  date: string;
+  departureDate: string;
   departure: string;
   arrival: string;
   duration: string;

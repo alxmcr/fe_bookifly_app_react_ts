@@ -23,7 +23,7 @@ export default function BoxBookingDepartureInfo({ flightId }: Props) {
       <>
         <div className="flex items-center gap-2 text-riptide-200">
           <Icon36x36Calendar />
-          <span className="font-nunito">{flight.date}</span>
+          <span className="font-nunito">{flight.departureDate}</span>
         </div>
         <div className="flex items-center gap-2 text-riptide-200">
           <Icon36x36AlarmOutlineRounded />

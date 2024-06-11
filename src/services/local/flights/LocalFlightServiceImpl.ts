@@ -41,7 +41,8 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
           const filter = flights.filter((flight) => {
             const conditionByFrom = flight.flight_from.cityId === fromId;
             const conditionByTo = flight.flight_to.cityId === toId;
-            const conditionByDate = new Date(flight.date).getTime() === new Date(departDate).getTime();
+            const conditionByDate =
+              new Date(flight.departureDate).getTime() === new Date(departDate).getTime();
 
             const conditionFilter = conditionByFrom && conditionByTo && conditionByDate;
 
@@ -121,7 +122,8 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
           );
 
           const filter = flights.filter((flight) => {
-            const conditionFilter = new Date(flight.date).getTime() === new Date(departureDate).getTime();
+            const conditionFilter =
+              new Date(flight.departureDate).getTime() === new Date(departureDate).getTime();
 
             return conditionFilter;
           });
