@@ -1,9 +1,13 @@
 import FormPassenger from './FormPassenger';
 
-export default function BoxFormPassenger() {
+type Props = {
+  index: number;
+};
+
+export default function BoxFormPassenger({ index = 0 }: Props) {
   return (
     <div>
-      <FormPassenger />
+      <FormPassenger indexPassenger={index} />
     </div>
   );
 }

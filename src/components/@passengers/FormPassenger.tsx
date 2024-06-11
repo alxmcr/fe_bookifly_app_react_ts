@@ -1,15 +1,47 @@
 import React from 'react';
+import { BookingContext, BookingDispatchContext } from '../../@providers/booking/BookingContext';
+import { updatePassengerAction } from '../../store/booking/@actions/actions';
 
-export default function FormPassenger() {
+type Props = {
+  indexPassenger: number;
+};
+
+export default function FormPassenger({ indexPassenger = 0 }: Props) {
   const [firstName, setFirstName] = React.useState('');
   const [lastname, setLastname] = React.useState('');
+  const booking = React.useContext(BookingContext);
+  const dispatchBooking = React.useContext(BookingDispatchContext);
 
   const handleFirstName = (ev: React.ChangeEvent<HTMLInputElement>) => {
     setFirstName(ev.target.value);
+
+    if (indexPassenger >= 0 && indexPassenger < booking.passengers.length) {
+      const passengerToUpdate = booking.passengers[indexPassenger];
+
+      if (passengerToUpdate !== undefined) {
+        updatePassengerAction(
+          indexPassenger,
+          { ...passengerToUpdate, pa_firstName: ev.target.value },
+          dispatchBooking,
+        );
+      }
+    }
   };
 
   const handleLastname = (ev: React.ChangeEvent<HTMLInputElement>) => {
     setLastname(ev.target.value);
+
+    if (indexPassenger >= 0 && indexPassenger < booking.passengers.length) {
+      const passengerToUpdate = booking.passengers[indexPassenger];
+
+      if (passengerToUpdate !== undefined) {
+        updatePassengerAction(
+          indexPassenger,
+          { ...passengerToUpdate, pa_lastName: ev.target.value },
+          dispatchBooking,
+        );
+      }
+    }
   };
 
   const handleSubmit = (ev: React.FormEvent) => {

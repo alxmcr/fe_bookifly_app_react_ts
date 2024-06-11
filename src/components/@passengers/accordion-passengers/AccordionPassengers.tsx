@@ -23,7 +23,7 @@ export default function AccordionPassengers() {
       <div className="accordion w-full">
         {booking.passengers.map((passenger, index) => (
           <ItemAccordionPassenger key={passenger.pa_temporal_id} summary={`Passenger ${index + 1}`}>
-            <BoxFormPassenger />
+            <BoxFormPassenger index={index} />
           </ItemAccordionPassenger>
         ))}
       </div>
