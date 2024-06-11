@@ -3,7 +3,7 @@ import Logo56x56Bookifly from '../@logos/56x56/Logo56x56Bookifly';
 
 export default function AppHeader() {
   return (
-    <header className="absolute flex w-full justify-center py-4">
+    <header className="absolute flex w-full justify-center p-4 md:px-[40px]">
       <div className="mx-auto flex w-full items-center justify-between px-4 md:px-10 lg:w-[1028px] lg:px-0">
         <div className="flex items-center gap-4">
           <NavLink to="/" className="flex items-center gap-4">
