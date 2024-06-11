@@ -29,7 +29,7 @@ export default function BoxFlightRoute({ flightId = '' }: Props) {
         <div className="hidden lg:flex">
           <IllustrationRouteFillDesktop />
         </div>
-        <BoxCityHeader cityId={flight.city_arrival_to.cityId} />
+        <BoxCityHeader cityId={flight.city_destination_to.cityId} />
       </div>
     );
   }

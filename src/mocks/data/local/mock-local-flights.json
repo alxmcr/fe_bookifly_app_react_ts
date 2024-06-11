@@ -16,7 +16,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 2,
         "name": "Monterrey",
         "country": "México",
@@ -42,7 +42,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 3,
         "name": "Guadalajara",
         "country": "México",
@@ -68,7 +68,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 4,
         "name": "Veracruz",
         "country": "México",
@@ -94,7 +94,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 5,
         "name": "Madrid",
         "country": "Spain",
@@ -120,7 +120,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 6,
         "name": "Paris",
         "country": "France",
@@ -146,7 +146,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 7,
         "name": "Buenos Aires",
         "country": "Argentina",
@@ -172,7 +172,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 8,
         "name": "Rio de Janeiro",
         "country": "Brazil",
@@ -198,7 +198,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 9,
         "name": "Brasilia",
         "country": "Brazil",
@@ -224,7 +224,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 10,
         "name": "Santiago",
         "country": "Chile",
@@ -250,7 +250,7 @@
         "abbrev": "CDMX",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 11,
         "name": "Tokio",
         "country": "Japan",
@@ -276,7 +276,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",
@@ -302,7 +302,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 3,
         "name": "Guadalajara",
         "country": "México",
@@ -328,7 +328,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 4,
         "name": "Veracruz",
         "country": "México",
@@ -354,7 +354,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 5,
         "name": "Madrid",
         "country": "España",
@@ -380,7 +380,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 6,
         "name": "Paris",
         "country": "France",
@@ -406,7 +406,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 7,
         "name": "Buenos Aires",
         "country": "Argentina",
@@ -432,7 +432,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 8,
         "name": "Rio de Janeiro",
         "country": "Brazil",
@@ -458,7 +458,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 9,
         "name": "Brasilia",
         "country": "Brazil",
@@ -484,7 +484,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 10,
         "name": "Santiago",
         "country": "Chile",
@@ -510,7 +510,7 @@
         "abbrev": "MTY",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 11,
         "name": "Tokio",
         "country": "Japan",
@@ -536,7 +536,7 @@
         "abbrev": "GDL",
         "abbrevCountry": "MX"
       },
-      "city_departure_to": {
+      "city_destination_to": {
         "cityId": 1,
         "name": "Ciudad de México",
         "country": "México",

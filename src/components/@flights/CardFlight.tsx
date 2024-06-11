@@ -59,7 +59,7 @@ export default function CardFlight({ flight }: Props) {
         </div>
         <div className="flex flex-col items-center justify-center gap-2">
           <span className="font-nunito text-[18px] font-bold text-riptide-200">
-            {flight.city_arrival_to.abbrev}
+            {flight.city_destination_to.abbrev}
           </span>
           <span className="font-nunito text-light-50">{flight.arrival}</span>
         </div>
@@ -67,7 +67,9 @@ export default function CardFlight({ flight }: Props) {
       <div className="flex justify-between border-t border-riptide-200 pt-4">
         <div className="flex flex-col justify-center gap-2">
           <span className="text-[14px] text-riptide-200">Price by passenger</span>
-          <span className="h-[40px] font-nunito text-[1rem] font-bold text-light-50">${flight.priceAmount}</span>
+          <span className="h-[40px] font-nunito text-[1rem] font-bold text-light-50">
+            ${flight.priceAmount}
+          </span>
         </div>
         <div className="flex flex-col justify-center gap-2">
           <span className="text-[14px] text-riptide-200">Total of passengers</span>
@@ -103,7 +105,9 @@ export default function CardFlight({ flight }: Props) {
         <div className="flex grow flex-col justify-center gap-2">
           <span className="text-riptide-200">Total all passengers</span>
           <div className="flex h-[40px] w-[154px] items-center justify-center rounded-lg bg-light-50">
-            <span className="font-nunito font-bold text-light-950">${flight.priceAmount * totalPassengers}</span>
+            <span className="font-nunito font-bold text-light-950">
+              ${flight.priceAmount * totalPassengers}
+            </span>
           </div>
         </div>
         <div className="flex grow flex-col gap-2">
