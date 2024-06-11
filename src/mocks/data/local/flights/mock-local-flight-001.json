@@ -5,18 +5,22 @@
     "flightId": 1,
     "departureDate": "2024-08-01",
     "departureTime": "11:00:00",
-    "arrival": "13:00:00",
-    "duration": "02:00:00",
+    "durationInMinutes": 300,
     "priceAmount": 250.0,
+    "priceCurrency": "$",
     "city_departure_from": {
       "cityId": 1,
       "name": "Ciudad de México",
-      "country": "México"
+      "country": "México",
+      "abbrev": "CDMX",
+      "abbrevCountry": "MX"
     },
     "city_destination_to": {
       "cityId": 2,
       "name": "Monterrey",
-      "country": "México"
+      "country": "México",
+      "abbrev": "MTY",
+      "abbrevCountry": "MX"
     }
   }
 }

@@ -5,13 +5,15 @@
     "flightId": 6,
     "departureDate": "2024-11-01",
     "departureTime": "10:00:00",
-    "arrival": "12:00:00",
-    "duration": "02:00:00",
+    "durationInMinutes": 300,
     "priceAmount": 300.0,
+    "priceCurrency": "$",
     "city_departure_from": {
       "cityId": 1,
       "name": "Ciudad de México",
-      "country": "México"
+      "country": "México",
+      "abbrev": "CDMX",
+      "abbrevCountry": "MX"
     },
     "city_destination_to": {
       "cityId": 7,

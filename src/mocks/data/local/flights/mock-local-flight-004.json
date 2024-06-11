@@ -5,13 +5,15 @@
     "flightId": 4,
     "departureDate": "",
     "departureTime": "21:00:00",
-    "arrival": "22:00:00",
-    "duration": "01:00:00",
+    "durationInMinutes": 340,
     "priceAmount": 400.0,
+    "priceCurrency": "$",
     "city_departure_from": {
       "cityId": 1,
       "name": "Ciudad de México",
-      "country": "México"
+      "country": "México",
+      "abbrev": "CDMX",
+      "abbrevCountry": "MX"
     },
     "city_destination_to": {
       "cityId": 5,

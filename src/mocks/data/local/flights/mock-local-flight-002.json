@@ -5,18 +5,22 @@
     "flightId": 2,
     "departureDate": "2024-11-01",
     "departureTime": "15:00:00",
-    "arrival": "18:00:00",
-    "duration": "03:00:00",
+    "durationInMinutes": 400,
     "priceAmount": 400.0,
+    "priceCurrency": "$",
     "city_departure_from": {
       "cityId": 1,
       "name": "Ciudad de México",
-      "country": "México"
+      "country": "México",
+      "abbrev": "CDMX",
+      "abbrevCountry": "MX"
     },
     "city_destination_to": {
       "cityId": 3,
       "name": "Guadalajara",
-      "country": "México"
+      "country": "México",
+      "abbrev": "GDL",
+      "abbrevCountry": "MX"
     }
   }
 }
