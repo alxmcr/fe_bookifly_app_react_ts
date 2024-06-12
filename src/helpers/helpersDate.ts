@@ -5,7 +5,17 @@ export function calculateArrivalDateTime(
   departureTime = '',
   durationMinutes = 0,
 ): { arrivalDate: string; arrivalTime: string } {
+  console.log({ departureDate, departureTime, durationMinutes });
+
   if (departureDate === null || departureDate === undefined) {
+    return { arrivalDate: '', arrivalTime: '' };
+  }
+
+  if (departureTime === null || departureTime === undefined) {
+    return { arrivalDate: '', arrivalTime: '' };
+  }
+
+  if (isNaN(departureDate.getTime())) {
     return { arrivalDate: '', arrivalTime: '' };
   }
 
