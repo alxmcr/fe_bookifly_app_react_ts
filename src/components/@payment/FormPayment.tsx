@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CheckoutFormData } from '../../@types/provider/providerTypes';
 import { initialCheckoutEmpty } from '../../mocks/data/mock-payments-data';
 
 export default function FormPayment() {
+  const navigate = useNavigate();
   const [formData, setFormData] = React.useState<CheckoutFormData>(initialCheckoutEmpty);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -12,7 +14,8 @@ export default function FormPayment() {
 
   const handleSubmit = (ev: React.FormEvent) => {
     ev.preventDefault();
-    console.log(formData);
+
+    navigate('/booking-confirmation');
   };
 
   return (
