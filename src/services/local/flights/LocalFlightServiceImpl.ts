@@ -14,6 +14,17 @@ import mockLocalFlight007 from '../../../mocks/data/local/flights/mock-local-fli
 import mockLocalFlight008 from '../../../mocks/data/local/flights/mock-local-flight-008.json';
 import mockLocalFlight009 from '../../../mocks/data/local/flights/mock-local-flight-009.json';
 import mockLocalFlight010 from '../../../mocks/data/local/flights/mock-local-flight-010.json';
+import mockLocalFlight011 from '../../../mocks/data/local/flights/mock-local-flight-011.json';
+import mockLocalFlight012 from '../../../mocks/data/local/flights/mock-local-flight-012.json';
+import mockLocalFlight013 from '../../../mocks/data/local/flights/mock-local-flight-013.json';
+import mockLocalFlight014 from '../../../mocks/data/local/flights/mock-local-flight-014.json';
+import mockLocalFlight015 from '../../../mocks/data/local/flights/mock-local-flight-015.json';
+import mockLocalFlight016 from '../../../mocks/data/local/flights/mock-local-flight-016.json';
+import mockLocalFlight017 from '../../../mocks/data/local/flights/mock-local-flight-017.json';
+import mockLocalFlight018 from '../../../mocks/data/local/flights/mock-local-flight-018.json';
+import mockLocalFlight019 from '../../../mocks/data/local/flights/mock-local-flight-019.json';
+import mockLocalFlight020 from '../../../mocks/data/local/flights/mock-local-flight-020.json';
+import mockLocalFlight021 from '../../../mocks/data/local/flights/mock-local-flight-021.json';
 import mockLocalModalListFlights from '../../../mocks/data/local/mock-local-flights.json';
 import { ILocalFlightService } from './ILocalFlightService';
 
@@ -156,36 +167,93 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
       setTimeout(() => {
         try {
           switch (id) {
-            case '1':
+            case '1': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight001 as LocalModelFlightData));
               break;
-            case '2':
+            }
+            case '2': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight002 as LocalModelFlightData));
               break;
-            case '3':
+            }
+            case '3': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight003 as LocalModelFlightData));
               break;
-            case '4':
+            }
+            case '4': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight004 as LocalModelFlightData));
               break;
-            case '5':
+            }
+            case '5': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight005 as LocalModelFlightData));
               break;
-            case '6':
+            }
+            case '6': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight006 as LocalModelFlightData));
               break;
-            case '7':
+            }
+            case '7': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight007 as LocalModelFlightData));
               break;
-            case '8':
+            }
+            case '8': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight008 as LocalModelFlightData));
               break;
-            case '9':
+            }
+            case '9': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight009 as LocalModelFlightData));
               break;
-            case '10':
+            }
+            case '10': {
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight010 as LocalModelFlightData));
               break;
+            }
+            case '11': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight011 as LocalModelFlightData));
+              break;
+            }
+            case '12': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight012 as LocalModelFlightData));
+              break;
+            }
+            case '13': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight013 as LocalModelFlightData));
+              break;
+            }
+            case '14': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight014 as LocalModelFlightData));
+              break;
+            }
+            case '15': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight015 as LocalModelFlightData));
+              break;
+            }
+            case '16': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight016 as LocalModelFlightData));
+              break;
+            }
+            case '17': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight017 as LocalModelFlightData));
+              break;
+            }
+            case '18': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight018 as LocalModelFlightData));
+              break;
+            }
+            case '19': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight019 as LocalModelFlightData));
+              break;
+            }
+            case '20': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight020 as LocalModelFlightData));
+              break;
+            }
+            case '21': {
+              resolve(mapperLocalModelFlightToFlightData(mockLocalFlight021 as LocalModelFlightData));
+              break;
+            }
+            default: {
+              throw new Error(`There is not data flight for #${id}`);
+            }
           }
         } catch (error) {
           reject(error);

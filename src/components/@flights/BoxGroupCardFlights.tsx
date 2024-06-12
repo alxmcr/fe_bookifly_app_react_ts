@@ -12,11 +12,11 @@ export default function BoxGroupCardFlights({ fromId = 0, toId = 0, departDate =
   const { flights, statusFlights, errorFlights } = useLocalSearchFlightsComplete(fromId, toId, departDate);
 
   if (LoadingStates.PENDING === statusFlights) {
-    return <p>Loading flights...</p>;
+    return <p className="text-riptide-200">Loading flights...</p>;
   }
 
   if (LoadingStates.ERROR === statusFlights && errorFlights) {
-    return <p>{errorFlights.message}</p>;
+    return <p className="text-riptide-200">{errorFlights.message}</p>;
   }
 
   if (LoadingStates.SUCCESS === statusFlights && flights) {

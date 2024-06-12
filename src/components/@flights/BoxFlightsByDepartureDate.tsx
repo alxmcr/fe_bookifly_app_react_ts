@@ -10,11 +10,11 @@ export default function BoxFlightsByDepartureDate() {
     useSearchFlightsByDepartureDate(flightFound.departureDate);
 
   if (LoadingStates.PENDING === statusFlightsByDepartureDate) {
-    return <p>Loading flights...</p>;
+    return <p className="text-riptide-200">Loading flights...</p>;
   }
 
   if (LoadingStates.ERROR === statusFlightsByDepartureDate && errorFlightsByDepartureDate) {
-    return <p>{errorFlightsByDepartureDate.message}</p>;
+    return <p className="text-riptide-200">{errorFlightsByDepartureDate.message}</p>;
   }
 
   if (LoadingStates.SUCCESS === statusFlightsByDepartureDate && flightsByDepartureDate) {

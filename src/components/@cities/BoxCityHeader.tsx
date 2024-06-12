@@ -9,11 +9,11 @@ export default function BoxCityHeader({ cityId = 0 }: Props) {
   const { city, errorCity, statusCity } = useLocalCity(cityId);
 
   if (LoadingStates.PENDING === statusCity) {
-    return <p>Loading city...</p>;
+    return <p className="text-riptide-200">Loading city...</p>;
   }
 
   if (LoadingStates.ERROR === statusCity && errorCity) {
-    return <p>{errorCity.message}</p>;
+    return <p className="text-riptide-200">{errorCity.message}</p>;
   }
 
   if (LoadingStates.SUCCESS === statusCity && city) {
