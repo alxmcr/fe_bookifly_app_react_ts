@@ -82,7 +82,7 @@
     "pk": 4,
     "fields": {
       "flightId": 4,
-      "departureDate": "",
+      "departureDate": "2024-11-01",
       "departureTime": "21:00:00",
       "durationInMinutes": 340,
       "priceAmount": 400.0,
