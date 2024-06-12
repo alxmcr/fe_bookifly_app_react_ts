@@ -11,11 +11,11 @@ export default function BoxFlightsByCityFrom() {
   );
 
   if (LoadingStates.PENDING === statusFlightsByCityFrom) {
-    return <p>Loading flights...</p>;
+    return <p className="text-riptide-200">Loading flights...</p>;
   }
 
   if (LoadingStates.ERROR === statusFlightsByCityFrom && errorFlightsByCityFrom) {
-    return <p>{errorFlightsByCityFrom.message}</p>;
+    return <p className="text-riptide-200">{errorFlightsByCityFrom.message}</p>;
   }
 
   if (LoadingStates.SUCCESS === statusFlightsByCityFrom && flightsByCityFrom) {

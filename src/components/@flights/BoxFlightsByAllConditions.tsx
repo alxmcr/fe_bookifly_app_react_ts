@@ -13,11 +13,11 @@ export default function BoxFlightsByAllConditions() {
   );
 
   if (LoadingStates.PENDING === statusFlights) {
-    return <p>Loading flights...</p>;
+    return <p className="text-riptide-200">Loading flights...</p>;
   }
 
   if (LoadingStates.ERROR === statusFlights && errorFlights) {
-    return <p>{errorFlights.message}</p>;
+    return <p className="text-riptide-200">{errorFlights.message}</p>;
   }
 
   if (LoadingStates.SUCCESS === statusFlights && flights) {

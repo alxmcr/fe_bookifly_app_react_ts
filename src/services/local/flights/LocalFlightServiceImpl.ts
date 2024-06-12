@@ -186,6 +186,9 @@ export class LocalFlightServiceImpl implements ILocalFlightService {
             case '10':
               resolve(mapperLocalModelFlightToFlightData(mockLocalFlight010 as LocalModelFlightData));
               break;
+            default: {
+              throw new Error(`There is not data flight for #${id}`);
+            }
           }
         } catch (error) {
           reject(error);

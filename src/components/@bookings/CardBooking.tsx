@@ -10,14 +10,15 @@ type Props = {
 };
 
 export default function CardBooking({ booking }: Props) {
-  const { flight, errorFlight, statusFlight } = useLocalFlight(String(booking?.flightSelectedId));
+  const flightId = String(booking?.flightSelectedId);
+  const { flight, errorFlight, statusFlight } = useLocalFlight(flightId);
 
   if (LoadingStates.PENDING === statusFlight) {
-    return <p>Loading Flight...</p>;
+    return <p className="text-riptide-200">Loading Flight...</p>;
   }
 
   if (LoadingStates.ERROR === statusFlight && errorFlight) {
-    return <p>{errorFlight.message}</p>;
+    return <p className="text-riptide-200">{errorFlight.message}</p>;
   }
 
   if (LoadingStates.SUCCESS === statusFlight && flight) {

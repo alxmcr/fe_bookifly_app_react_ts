@@ -19,11 +19,11 @@ export default function SelectCities({
   const { cities, statusCities, errorCities } = useLocalCities();
 
   if (LoadingStates.PENDING === statusCities) {
-    return <p>Loading cities...</p>;
+    return <p className="text-riptide-200">Loading cities...</p>;
   }
 
   if (LoadingStates.ERROR === statusCities && errorCities) {
-    return <p>{errorCities.message}</p>;
+    return <p className="text-riptide-200">{errorCities.message}</p>;
   }
 
   return (
