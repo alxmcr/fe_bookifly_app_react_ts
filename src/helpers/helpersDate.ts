@@ -5,7 +5,6 @@ export function calculateArrivalDateTime(
   departureTime = '',
   durationMinutes = 0,
 ): { arrivalDate: string; arrivalTime: string } {
-
   if (departureDate === null || departureDate === undefined) {
     return { arrivalDate: '', arrivalTime: '' };
   }
