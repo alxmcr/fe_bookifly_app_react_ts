@@ -2,10 +2,13 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CheckoutFormData } from '../../@types/provider/providerTypes';
 import { initialCheckoutEmpty } from '../../mocks/data/mock-payments-data';
+import { BookingDispatchContext } from '../../@providers/booking/BookingContext';
+import { setBookingStatusAction } from '../../store/booking/@actions/actions';
 
 export default function FormPayment() {
   const navigate = useNavigate();
   const [formData, setFormData] = React.useState<CheckoutFormData>(initialCheckoutEmpty);
+  const dispatchBooking = React.useContext(BookingDispatchContext);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -14,6 +17,8 @@ export default function FormPayment() {
 
   const handleSubmit = (ev: React.FormEvent) => {
     ev.preventDefault();
+
+    setBookingStatusAction('Confirmed', dispatchBooking);
 
     navigate('/booking-confirmation');
   };
