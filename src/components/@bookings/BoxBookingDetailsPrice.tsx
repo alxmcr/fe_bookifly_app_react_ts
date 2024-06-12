@@ -20,7 +20,7 @@ export default function BoxBookingDetailsPrice({ flightId = '', numberOfTickets 
 
   if (LoadingStates.SUCCESS === statusFlight && flight) {
     return (
-      <>
+      <div className="flex items-center justify-between gap-2">
         <div className="flex gap-1 rounded-lg border border-riptide-200 p-2">
           <Icon24x24Passengers />
           <span className="font-nunito text-light-50">{numberOfTickets} passenger(s)</span>
@@ -28,7 +28,7 @@ export default function BoxBookingDetailsPrice({ flightId = '', numberOfTickets 
         <div className="flex w-[116px] justify-center rounded-lg bg-light-50 p-2">
           <span className="font-nunito text-light-950">${numberOfTickets * flight.priceAmount}</span>
         </div>
-      </>
+      </div>
     );
   }
 
