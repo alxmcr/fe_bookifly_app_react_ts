@@ -6,7 +6,6 @@ import GroupCardFlights from './GroupCardFlights';
 
 export default function BoxFlightsByCityFrom() {
   const flightFound = React.useContext(SearchFlightContext);
-  console.log('🚀 ~ BoxFlightsByCityFrom ~ flightFound:', flightFound);
   const { flightsByCityFrom, statusFlightsByCityFrom, errorFlightsByCityFrom } = useSearchFlightsByCityFrom(
     flightFound.fromId,
   );
