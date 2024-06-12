@@ -15,6 +15,10 @@ export function calculateArrivalDateTime(
     return { arrivalDate: '', arrivalTime: '' };
   }
 
+  if (isNaN(departureDate.getTime())) {
+    return { arrivalDate: '', arrivalTime: '' };
+  }
+
   // Convert departure time to Date object
   const [hours = 0, minutes = 0, seconds = 0] = departureTime.split(':').map(Number);
   departureDate.setHours(hours);
