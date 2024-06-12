@@ -4,7 +4,6 @@ import { LocalFlightData } from '../../../@types/service/serviceTypes';
 import { LocalFlightServiceImpl } from '../../../services/local/flights/LocalFlightServiceImpl';
 
 export const useLocalFlight = (id = '0') => {
-  console.log('🚀 ~ useLocalFlight ~ id:', id);
   const [flight, setFlight] = React.useState<LocalFlightData | null>(null);
   const [errorFlight, setErrorFlight] = React.useState<Error | null>(null);
   const [statusFlight, setStatusFlight] = React.useState(LoadingStates.IDLE);
@@ -16,7 +15,6 @@ export const useLocalFlight = (id = '0') => {
 
         const service = new LocalFlightServiceImpl();
         const result = await service.findById(id);
-        console.log('🚀 ~ fetchFlight ~ result:', result);
 
         setFlight(result);
         setStatusFlight(LoadingStates.SUCCESS);
